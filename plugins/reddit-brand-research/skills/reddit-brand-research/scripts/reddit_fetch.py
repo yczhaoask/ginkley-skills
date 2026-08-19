@@ -14,8 +14,19 @@ Examples:
   python3 reddit_fetch.py search --subs BuyItForLife \
       --query "breaks after a year" --limit 40 --out research/pain.json
 
+Auth (optional but recommended):
+  Anonymous access to reddit.com's public .json endpoints often gets refused.
+  Register a "script" app at https://www.reddit.com/prefs/apps and export:
+
+    export REDDIT_CLIENT_ID=...
+    export REDDIT_CLIENT_SECRET=...
+    export REDDIT_UA='<your-app>/0.1 by /u/<your-reddit-username>'
+
+  The script then uses application-only OAuth (client_credentials) against
+  oauth.reddit.com. Read-only; your Reddit password is never involved.
+
 Notes:
-  * Uses reddit.com's public .json endpoints; no account required.
+  * Falls back to the anonymous .json endpoints when no credentials are set.
   * Sleeps 2s between requests by default to stay light on their servers,
     and backs off automatically when rate limited (429).
   * For heavy or commercial use, register an app and switch to OAuth per
@@ -32,6 +43,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import base64
 
 UA = os.environ.get(
     "REDDIT_UA",
@@ -41,13 +53,63 @@ DELAY = float(os.environ.get("REDDIT_DELAY", "2.0"))
 MAX_RETRY = 4
 FAILURES = []          # (url, reason) for every request that never succeeded
 
+CLIENT_ID = os.environ.get("REDDIT_CLIENT_ID")
+CLIENT_SECRET = os.environ.get("REDDIT_CLIENT_SECRET")
+_TOKEN = None          # cached bearer token when running authenticated
+
+
+def authed():
+    return bool(CLIENT_ID and CLIENT_SECRET)
+
+
+def token():
+    """Application-only OAuth token (client_credentials).
+
+    Reads public data only — no Reddit password involved. Registered at
+    https://www.reddit.com/prefs/apps as a "script" app.
+    """
+    global _TOKEN
+    if _TOKEN:
+        return _TOKEN
+    basic = base64.b64encode(f"{CLIENT_ID}:{CLIENT_SECRET}".encode()).decode()
+    req = urllib.request.Request(
+        "https://www.reddit.com/api/v1/access_token",
+        data=urllib.parse.urlencode({"grant_type": "client_credentials"}).encode(),
+        headers={"Authorization": f"Basic {basic}", "User-Agent": UA},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            _TOKEN = json.loads(r.read().decode("utf-8"))["access_token"]
+    except urllib.error.HTTPError as e:
+        body = ""
+        try:
+            body = e.read().decode("utf-8", "replace")[:200]
+        except Exception:
+            pass
+        print(f"!! OAuth token request failed: HTTP {e.code} {body}", file=sys.stderr)
+        print("   Check REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET, and that the app "
+              "type is 'script'.", file=sys.stderr)
+        sys.exit(2)
+    print(f"authenticated as app {CLIENT_ID[:6]}...", file=sys.stderr)
+    return _TOKEN
+
+
+def api(path):
+    """Full URL for an API path, honouring whichever auth mode is active."""
+    if authed():
+        return "https://oauth.reddit.com" + path
+    return "https://www.reddit.com" + path + ".json"
+
 
 def get(url, params=None):
     """GET a reddit JSON endpoint with backoff. Returns None on failure."""
     if params:
         url = f"{url}?{urllib.parse.urlencode(params)}"
     for attempt in range(MAX_RETRY):
-        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        headers = {"User-Agent": UA}
+        if authed():
+            headers["Authorization"] = f"bearer {token()}"
+        req = urllib.request.Request(url, headers=headers)
         try:
             with urllib.request.urlopen(req, timeout=30) as r:
                 time.sleep(DELAY)
@@ -76,7 +138,7 @@ def get(url, params=None):
 
 def discover(query, limit):
     """Search communities by keyword. Returns candidates sorted by subscribers."""
-    d = get("https://www.reddit.com/subreddits/search.json",
+    d = get(api("/subreddits/search"),
             {"q": query, "limit": min(limit, 100)})
     if not d:
         return []
@@ -113,7 +175,7 @@ def _post(p):
 
 def fetch_comments(post_id, sub, limit):
     """Fetch a post's top-level comments, sorted by score."""
-    d = get(f"https://www.reddit.com/r/{sub}/comments/{post_id}.json",
+    d = get(api(f"/r/{sub}/comments/{post_id}"),
             {"limit": limit, "sort": "top"})
     if not d or len(d) < 2:
         return []
@@ -138,7 +200,7 @@ def fetch(subs, timeframe, limit, n_comments):
     posts = []
     for sub in subs:
         print(f"[fetch] r/{sub} top/{timeframe} limit={limit}", file=sys.stderr)
-        d = get(f"https://www.reddit.com/r/{sub}/top.json",
+        d = get(api(f"/r/{sub}/top"),
                 {"t": timeframe, "limit": min(limit, 100)})
         if not d:
             continue
@@ -155,7 +217,7 @@ def search(subs, query, limit, n_comments):
     posts = []
     for sub in subs:
         print(f"[search] r/{sub} q={query!r}", file=sys.stderr)
-        d = get(f"https://www.reddit.com/r/{sub}/search.json",
+        d = get(api(f"/r/{sub}/search"),
                 {"q": query, "restrict_sr": 1, "limit": min(limit, 100), "sort": "relevance"})
         if not d:
             continue
@@ -177,10 +239,18 @@ def finish(data, out, label):
         print(f"!! {len(FAILURES)} request(s) failed. First few:", file=sys.stderr)
         for url, why in FAILURES[:3]:
             print(f"     {why}\n       {url}", file=sys.stderr)
-        print("\n   If these are 403s, Reddit is refusing this User-Agent. Try:",
-              file=sys.stderr)
-        print("     export REDDIT_UA='<your-app>/0.1 by /u/<your-reddit-username>'",
-              file=sys.stderr)
+        if authed():
+            print("\n   Running authenticated; a 403 here usually means the app type "
+                  "is not 'script'.", file=sys.stderr)
+        else:
+            print("\n   If these are 403s, Reddit is refusing anonymous access. Either:",
+                  file=sys.stderr)
+            print("     export REDDIT_UA='<your-app>/0.1 by /u/<your-reddit-username>'",
+                  file=sys.stderr)
+            print("   or register a script app at https://www.reddit.com/prefs/apps and set:",
+                  file=sys.stderr)
+            print("     export REDDIT_CLIENT_ID=... REDDIT_CLIENT_SECRET=...",
+                  file=sys.stderr)
         print("   If they are 429s, slow down:  export REDDIT_DELAY=5", file=sys.stderr)
     else:
         print("!! No request errors — the query genuinely matched nothing.",
