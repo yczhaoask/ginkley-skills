@@ -33,9 +33,13 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-UA = "reddit-brand-research/0.1 (market research; contact: set-your-own)"
-DELAY = 2.0
+UA = os.environ.get(
+    "REDDIT_UA",
+    "reddit-brand-research/0.1 (market research; contact: set-your-own)",
+)
+DELAY = float(os.environ.get("REDDIT_DELAY", "2.0"))
 MAX_RETRY = 4
+FAILURES = []          # (url, reason) for every request that never succeeded
 
 
 def get(url, params=None):
@@ -54,12 +58,19 @@ def get(url, params=None):
                 print(f"  {e.code} on {url} — backing off {back:.1f}s", file=sys.stderr)
                 time.sleep(back)
                 continue
-            print(f"  HTTP {e.code}: {url}", file=sys.stderr)
+            body = ""
+            try:
+                body = e.read().decode("utf-8", "replace")[:200]
+            except Exception:
+                pass
+            print(f"  HTTP {e.code}: {url}\n    {body}", file=sys.stderr)
+            FAILURES.append((url, f"HTTP {e.code}: {body[:120]}"))
             return None
         except Exception as e:
             print(f"  {type(e).__name__}: {e}", file=sys.stderr)
             time.sleep(DELAY * (2 ** attempt))
     print(f"  giving up: {url}", file=sys.stderr)
+    FAILURES.append((url, "exhausted retries"))
     return None
 
 
@@ -156,6 +167,27 @@ def search(subs, query, limit, n_comments):
     return posts
 
 
+def finish(data, out, label):
+    """Write results, then fail loudly if nothing came back."""
+    write(data, out)
+    if data:
+        return 0
+    print(f"\n!! {label} returned 0 items — nothing was collected.", file=sys.stderr)
+    if FAILURES:
+        print(f"!! {len(FAILURES)} request(s) failed. First few:", file=sys.stderr)
+        for url, why in FAILURES[:3]:
+            print(f"     {why}\n       {url}", file=sys.stderr)
+        print("\n   If these are 403s, Reddit is refusing this User-Agent. Try:",
+              file=sys.stderr)
+        print("     export REDDIT_UA='<your-app>/0.1 by /u/<your-reddit-username>'",
+              file=sys.stderr)
+        print("   If they are 429s, slow down:  export REDDIT_DELAY=5", file=sys.stderr)
+    else:
+        print("!! No request errors — the query genuinely matched nothing.",
+              file=sys.stderr)
+    return 1
+
+
 def write(data, out):
     if not out:
         json.dump(data, sys.stdout, ensure_ascii=False, indent=1)
@@ -195,12 +227,11 @@ def main():
 
     a = ap.parse_args()
     if a.cmd == "discover":
-        write(discover(a.query, a.limit), a.out)
-    elif a.cmd == "fetch":
-        write(fetch(a.subs, a.timeframe, a.limit, a.comments), a.out)
-    else:
-        write(search(a.subs, a.query, a.limit, a.comments), a.out)
+        return finish(discover(a.query, a.limit), a.out, "discover")
+    if a.cmd == "fetch":
+        return finish(fetch(a.subs, a.timeframe, a.limit, a.comments), a.out, "fetch")
+    return finish(search(a.subs, a.query, a.limit, a.comments), a.out, "search")
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
