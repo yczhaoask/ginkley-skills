@@ -1,24 +1,26 @@
 #!/usr/bin/env python3
-"""Reddit 公开 JSON 接口取数工具（reddit-brand-research 阶段 2 用）。
+"""Fetch public Reddit data (used by reddit-brand-research, phase 2).
 
-只读取公开内容，仅用标准库。三个子命令：
+Reads public content only, standard library only. Three subcommands:
 
-  discover  按关键词找候选社群
-  fetch     抓指定社群的热门帖子（可带评论）
-  search    在指定社群内按关键词检索
+  discover  find candidate communities by keyword
+  fetch     pull top posts from given subreddits (optionally with comments)
+  search    keyword search within given subreddits
 
-用法示例：
+Examples:
   python3 reddit_fetch.py discover --query "home improvement durable" --limit 25
   python3 reddit_fetch.py fetch --subs BuyItForLife HomeImprovement \
       --timeframe year --limit 50 --comments 30 --out research/raw.json
   python3 reddit_fetch.py search --subs BuyItForLife \
       --query "breaks after a year" --limit 40 --out research/pain.json
 
-说明：
-  * 走 reddit.com 的公开 .json 端点，不需要账号。
-  * 默认每次请求间隔 2 秒，避免给对方造成压力；被限流(429)时自动退避重试。
-  * 大批量或商业用途请按 Reddit 的 API 条款注册应用改用 OAuth。
-  * User-Agent 必须能说明用途，Reddit 会拒绝通用 UA。
+Notes:
+  * Uses reddit.com's public .json endpoints; no account required.
+  * Sleeps 2s between requests by default to stay light on their servers,
+    and backs off automatically when rate limited (429).
+  * For heavy or commercial use, register an app and switch to OAuth per
+    Reddit's API terms.
+  * The User-Agent must describe its purpose — Reddit rejects generic ones.
 """
 
 import argparse
@@ -37,7 +39,7 @@ MAX_RETRY = 4
 
 
 def get(url, params=None):
-    """GET 一个 reddit JSON 端点，带退避重试。失败返回 None。"""
+    """GET a reddit JSON endpoint with backoff. Returns None on failure."""
     if params:
         url = f"{url}?{urllib.parse.urlencode(params)}"
     for attempt in range(MAX_RETRY):
@@ -49,7 +51,7 @@ def get(url, params=None):
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 502, 503):
                 back = DELAY * (2 ** attempt) + random.uniform(0, 1)
-                print(f"  {e.code} on {url} — 退避 {back:.1f}s", file=sys.stderr)
+                print(f"  {e.code} on {url} — backing off {back:.1f}s", file=sys.stderr)
                 time.sleep(back)
                 continue
             print(f"  HTTP {e.code}: {url}", file=sys.stderr)
@@ -57,12 +59,12 @@ def get(url, params=None):
         except Exception as e:
             print(f"  {type(e).__name__}: {e}", file=sys.stderr)
             time.sleep(DELAY * (2 ** attempt))
-    print(f"  放弃: {url}", file=sys.stderr)
+    print(f"  giving up: {url}", file=sys.stderr)
     return None
 
 
 def discover(query, limit):
-    """按关键词搜社群。输出订阅数排序的候选列表。"""
+    """Search communities by keyword. Returns candidates sorted by subscribers."""
     d = get("https://www.reddit.com/subreddits/search.json",
             {"q": query, "limit": min(limit, 100)})
     if not d:
@@ -99,7 +101,7 @@ def _post(p):
 
 
 def fetch_comments(post_id, sub, limit):
-    """取一个帖子的顶层评论，按票数排序。"""
+    """Fetch a post's top-level comments, sorted by score."""
     d = get(f"https://www.reddit.com/r/{sub}/comments/{post_id}.json",
             {"limit": limit, "sort": "top"})
     if not d or len(d) < 2:
@@ -132,7 +134,7 @@ def fetch(subs, timeframe, limit, n_comments):
         for c in d.get("data", {}).get("children", []):
             p = _post(c["data"])
             if n_comments:
-                print(f"  评论: {p['title'][:60]}", file=sys.stderr)
+                print(f"  comments: {p['title'][:60]}", file=sys.stderr)
                 p["comments"] = fetch_comments(p["id"], sub, n_comments)
             posts.append(p)
     return posts
@@ -163,7 +165,7 @@ def write(data, out):
     with open(out, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
     n_c = sum(len(p.get("comments", [])) for p in data) if data and isinstance(data[0], dict) and "comments" in data[0] else 0
-    print(f"写入 {out}：{len(data)} 条" + (f"，评论 {n_c} 条" if n_c else ""), file=sys.stderr)
+    print(f"wrote {out}: {len(data)} items" + (f", {n_c} comments" if n_c else ""), file=sys.stderr)
 
 
 def main():
@@ -171,20 +173,20 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest="cmd", required=True)
 
-    d = sp.add_parser("discover", help="按关键词找候选社群")
+    d = sp.add_parser("discover", help="find candidate communities by keyword")
     d.add_argument("--query", required=True)
     d.add_argument("--limit", type=int, default=25)
     d.add_argument("--out")
 
-    f = sp.add_parser("fetch", help="抓社群热门帖")
+    f = sp.add_parser("fetch", help="pull top posts from subreddits")
     f.add_argument("--subs", nargs="+", required=True)
     f.add_argument("--timeframe", default="year",
                    choices=["hour", "day", "week", "month", "year", "all"])
     f.add_argument("--limit", type=int, default=50)
-    f.add_argument("--comments", type=int, default=0, help="每帖抓多少条顶层评论，0=不抓")
+    f.add_argument("--comments", type=int, default=0, help="top-level comments per post; 0 = none")
     f.add_argument("--out")
 
-    s = sp.add_parser("search", help="社群内关键词检索")
+    s = sp.add_parser("search", help="keyword search within subreddits")
     s.add_argument("--subs", nargs="+", required=True)
     s.add_argument("--query", required=True)
     s.add_argument("--limit", type=int, default=40)

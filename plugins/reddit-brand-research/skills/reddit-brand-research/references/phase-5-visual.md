@@ -1,43 +1,43 @@
-# 阶段 5 · 视觉：调性与语言
+# Phase 5 · Visual: tone and language
 
-> 视频中这一阶段在流程条里出现（探索/调研/杠杆/策略/**视觉**/落地），但口播未展开细节。
-> 以下是按整套方法论的一致逻辑补全的，使用前建议按自己的实际需要调整。
+> This phase appears in the source video's progress bar (Explore / Research / Leverage / Strategy / **Visual** / Launch), but the narration never elaborates on it.
+> What follows is a reasoned extension consistent with the rest of the methodology. Adjust it to your actual needs before relying on it.
 
-## 原则不变
+## The principle doesn't change
 
-视觉和语言也要有依据，不能拍脑袋。依据来自阶段 2 语料里用户**怎么描述**他们喜欢和讨厌的东西。
+Visuals and language need evidence too — no guessing. The evidence comes from how users in the Phase 2 corpus **describe** what they like and hate.
 
-## 从语料里能挖到什么
+## What to mine from the corpus
 
-回到阶段 2 的原文，找这些：
+Go back to the original quotes and look for:
 
-- 用户夸竞品的时候用什么词？（"sturdy" "no-nonsense" "just works"）
-- 骂竞品的时候用什么词？（"cheap-looking" "over-designed" "gimmicky"）
-- 他们晒图的时候在意什么？
+- Which words do users use when praising a competitor? ("sturdy", "no-nonsense", "just works")
+- Which words when criticizing one? ("cheap-looking", "over-designed", "gimmicky")
+- What do they care about when posting photos?
 
-这些词直接决定视觉方向。用户反复说 "no-nonsense"，那你的视觉就不该是花哨的。
+These words set the visual direction directly. If users keep saying "no-nonsense," your visuals should not be ornate.
 
-## 输出
+## Output
 
 ```markdown
-## 视觉与语言调性
+## Visual and language tone
 
-**视觉方向**：<3-5 个关键词>
-**依据**：
-> <用户原话> — <出处>
+**Visual direction**: <3-5 keywords>
+**Evidence**:
+> <user's own words> — <source>
 
-**该有的感觉**：<描述>
-**不该有的感觉**：<描述，对应用户明确讨厌的东西>
+**How it should feel**: <description>
+**How it must not feel**: <description, mapping to what users explicitly dislike>
 
-**语言风格**
-- 人称：<第一人称 / 第二人称>
-- 句长：<短句 / 完整句>
-- 该用的词：<从用户原话里来>
-- 禁用词：<用户明确反感的营销词>
+**Language style**
+- Person: <first / second>
+- Sentence length: <short / full>
+- Words to use: <drawn from users' own words>
+- Words to avoid: <marketing language users explicitly resent>
 
-**参考物**：<可以是竞品，也可以是别的品类的品牌>
+**References**: <can be competitors, or brands from an unrelated category>
 ```
 
-## 一条实用纪律
+## One practical rule
 
-**禁用词清单往往比该用词清单更值钱。** 出海品牌最常见的翻车是用了本地用户觉得油腻的营销话术。语料里用户吐槽 "marketing BS" 的地方，把那些词全部记下来。
+**The avoid-list is usually worth more than the use-list.** The most common way an overseas brand faces a backlash is adopting marketing language that reads as slimy to local users. Wherever the corpus shows users mocking "marketing BS," write every one of those words down.

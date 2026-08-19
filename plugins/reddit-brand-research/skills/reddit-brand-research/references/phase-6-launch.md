@@ -1,67 +1,67 @@
-# 阶段 6 · 落地：渠道、内容、验证
+# Phase 6 · Launch: channels, content, validation
 
-> 视频中这一阶段在流程条里出现（探索/调研/杠杆/策略/视觉/**落地**），但口播未展开细节。
-> 以下是按整套方法论的一致逻辑补全的，使用前建议按自己的实际需要调整。
+> This phase appears in the source video's progress bar (Explore / Research / Leverage / Strategy / Visual / **Launch**), but the narration never elaborates on it.
+> What follows is a reasoned extension consistent with the rest of the methodology. Adjust it to your actual needs before relying on it.
 
-## 目的
+## Purpose
 
-把品牌方案变成**这周就能开始做的事**。
+Turn the brand plan into **something you can start on this week.**
 
-前五个阶段的产出如果只是一份文档，价值是零。这一阶段要给出具体到可以立刻执行的清单。
+If the output of the previous five phases is only a document, its value is zero. This phase produces a checklist specific enough to act on immediately.
 
-## 1. 渠道：回到调研的社群
+## 1. Channels: back to the communities you researched
 
-**最直接的渠道就是阶段 2 确认过的那些社群。** 用户已经在那里了，你也已经知道他们在聊什么。
+**The most direct channel is the set of communities confirmed in Phase 2.** The users are already there, and you already know what they talk about.
 
-但注意 Reddit 的社区规范——**直接发广告会被封**。可行的方式：
+But mind Reddit's community norms — **posting ads outright gets you banned.** Workable approaches:
 
-- 先按社区规则参与讨论，回答和你产品领域相关的问题
-- 很多社区有专门的自我推广日或专区，找到它
-- 部分社区允许创始人在标明身份的前提下征集反馈
-- **先读该社区的 rules 页面**，每个社区规则不一样
+- Participate under the community's rules first; answer questions in your product's domain
+- Many communities have a dedicated self-promotion day or thread — find it
+- Some communities allow founders to solicit feedback if they disclose who they are
+- **Read that community's rules page first.** Every community differs.
 
 ```markdown
-| 社区 | 允许的参与方式 | 规则要点 | 首次动作 |
+| Community | Permitted participation | Key rules | First action |
 |---|---|---|---|
-| r/xxx | 周四自推日 | 不得含链接 | <具体做什么> |
+| r/xxx | Thursday self-promo thread | No links | <what to do> |
 ```
 
-## 2. 首批内容
+## 2. First content
 
-从机会点清单直接生成。每个高强度机会点，对应一条内容：
+Generate it straight from the opportunity list. Each high-strength opportunity gets one piece:
 
 ```markdown
-**内容 1**
-针对机会点：<哪一个>
-形式：<帖子 / 短视频 / 落地页板块>
-核心信息：<一句话>
-用户原话素材：
-> <引用> — <出处>
+**Content 1**
+Targets opportunity: <which one>
+Format: <post / short video / landing page section>
+Core message: <one sentence>
+Source material from users:
+> <quote> — <source>
 ```
 
-用用户自己的话做素材，转化率通常比自己写的文案高——因为那本来就是他们说出口的痛点。
+Using users' own words as material usually converts better than copy you write yourself — because it was already their stated pain.
 
-## 3. 验证指标
+## 3. Validation metrics
 
-**在开始之前先定好，什么结果算「这个定位成立」。**
+**Decide before you start what result would mean "this positioning holds."**
 
 ```markdown
-| 假设 | 怎么验证 | 成立的标准 | 时间窗 |
+| Hypothesis | How to test | Bar for success | Window |
 |---|---|---|---|
-| 用户真的愿意为耐用多付钱 | 落地页 A/B 测两种主打信息 | 耐用版转化率高 30%+ | 2 周 |
+| Users will pay more for durability | A/B two landing page messages | Durability version converts 30%+ higher | 2 weeks |
 ```
 
-没有预设标准的验证，事后一定会被解释成「还行」。
+Validation without a bar set in advance always gets explained afterward as "not bad."
 
-## 4. 回退机制
+## 4. Fallback
 
-**如果验证不通过，回到哪个阶段？**
+**If validation fails, which phase do you return to?**
 
-| 失败信号 | 回到 |
+| Failure signal | Return to |
 |---|---|
-| 社群里没人有这个痛点 | 阶段 2（社群选错了） |
-| 有痛点但没人愿意付费 | 阶段 3（机会点判断错了） |
-| 愿意付费但不选我们 | 阶段 4（卖点没对上竞品缺陷） |
-| 信息传达不出去 | 阶段 5（语言调性问题） |
+| Nobody in the community has this pain | Phase 2 (wrong communities) |
+| Pain exists but nobody will pay | Phase 3 (misjudged the opportunity) |
+| They'll pay but not for us | Phase 4 (selling points don't answer competitor gaps) |
+| The message isn't landing | Phase 5 (tone and language) |
 
-这套流程是可以循环的。**第一轮跑完不是终点**——原视频作者也提到这套流程他自己迭代了好几轮。
+This process is meant to loop. **Finishing one pass is not the end** — the original author noted having iterated it several times.

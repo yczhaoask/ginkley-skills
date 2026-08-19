@@ -1,63 +1,63 @@
-# 阶段 3 · 杠杆：找到还没被很好解决的机会点
+# Phase 3 · Leverage: find what nobody has solved well
 
-## 目的
+## Purpose
 
-**这个 skill 真正想解决的，不是帮你攒一堆数据，而是从这些讨论里发现还没被很好解决的机会点。**
+**What this skill actually sets out to do is not help you pile up data — it is to find, in these discussions, the opportunities nobody has solved well yet.**
 
-阶段 2 收上来的是一堆信号。这一步是把信号变成**判断**。
+Phase 2 hands you a pile of signals. This step turns signals into **judgment**.
 
-## 什么算「机会点」
+## What counts as an opportunity
 
-三个条件同时满足：
+All three conditions at once:
 
-1. **痛点真实存在** — 有反复出现的原文支撑（≥3 个不同作者）
-2. **现有方案没解决好** — 用户对竞品的评价里能看到明确的不满
-3. **你的产品有条件解决** — 对得上阶段 1 的产品理解卡
+1. **The pain is real** — supported by recurring quotes (≥3 different authors)
+2. **Existing solutions handle it badly** — competitor assessments show clear dissatisfaction
+3. **Your product is positioned to solve it** — it maps to the Phase 1 product understanding card
 
-三条缺一条都不是机会点：
-- 缺 1 → 是你的想象
-- 缺 2 → 红海，别人已经做好了
-- 缺 3 → 是别人的机会，不是你的
+Miss any one and it isn't an opportunity:
+- Missing 1 → you imagined it
+- Missing 2 → red ocean, someone already does it well
+- Missing 3 → it's someone else's opportunity, not yours
 
-## 做法
+## How to do it
 
-### 1. 聚类
+### 1. Cluster
 
-把阶段 2 的信号按「用户实际在抱怨的那件事」归堆。注意**按问题归类，不要按关键词归类**——同一个痛点用户会用完全不同的词描述。
+Group the Phase 2 signals by **the thing users are actually complaining about**. Cluster by problem, **not by keyword** — people describe the same pain in completely different words.
 
-### 2. 对每一堆，填这张表
+### 2. For each cluster, fill this out
 
 ```markdown
-### 机会点：<一句话概括>
+### Opportunity: <one-line summary>
 
-**痛点证据**（反复出现）
-> <原文引用 1> — <出处>
-> <原文引用 2> — <出处>
-> <原文引用 3> — <出处>
+**Pain evidence** (recurring)
+> <quote 1> — <source>
+> <quote 2> — <source>
+> <quote 3> — <source>
 
-**现有方案的不足**（竞品评价）
-> <原文引用> — <出处>
-竞品 <名字> 的做法：<描述>，用户不满在：<具体点>
+**Where existing solutions fall short** (competitor assessments)
+> <quote> — <source>
+What <competitor> does: <description>. The dissatisfaction is: <specific point>
 
-**我们能不能解决**
-对应产品能力：<产品理解卡里的哪一条>
-判断：能 / 部分能 / 不能 —— <理由>
+**Can we solve it**
+Matching product capability: <which line of the understanding card>
+Verdict: yes / partly / no — <reasoning>
 
-**机会强度**：高 / 中 / 低
+**Opportunity strength**: high / medium / low
 ```
 
-### 3. 排序，交给用户判断
+### 3. Rank, then hand the judgment to the user
 
-按「痛点频次 × 现有方案空缺程度 × 我们的解决能力」排序，列出来。
+Rank by "pain frequency × how badly existing solutions miss × our ability to solve," and lay it out.
 
-**但不要替用户选。** 把排序和理由摆出来，问他：
+**But don't choose for them.** Put the ranking and reasoning in front of them and ask:
 
-> 这几个机会点里，哪个最符合你自己对这个行业的判断？有没有哪个是你觉得不对的？
+> Of these opportunities, which one best matches your own read on this industry? Is there one you think is wrong?
 
-用户的行业直觉是重要输入。他说「这个不对」的时候，通常有你数据里看不到的原因——问清楚，那本身就是新信息。
+The user's industry instinct is important input. When they say "that one's off," there is usually a reason your data can't see — ask what it is. That itself is new information.
 
-## 产出：机会点清单
+## Output: the opportunity list
 
-按强度排序，每个都带完整证据链。**至少 1 个，不超过 5 个。**
+Ranked by strength, each with a complete evidence chain. **At least 1, no more than 5.**
 
-超过 5 个说明没聚焦，回去重新聚类。
+More than 5 means you haven't focused. Go back and re-cluster.

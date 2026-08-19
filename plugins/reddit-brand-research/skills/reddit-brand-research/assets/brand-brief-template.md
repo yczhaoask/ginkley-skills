@@ -1,131 +1,131 @@
-# <品牌名> 品牌方案
+# <Brand> Brand Plan
 
-> 本方案由 reddit-brand-research 流程生成。
-> **每一条结论都附有 Reddit 真实用户原话作为依据。没有依据的条目不应出现在这份文档里。**
+> Produced by the reddit-brand-research process.
+> **Every conclusion carries a real Reddit user quote as evidence. Any entry without evidence does not belong in this document.**
 
-生成日期：<日期>
-调研社群：<r/xxx, r/yyy, r/zzz>
-语料规模：<N 个帖子 / M 条评论，时间范围 xxx>
+Date: <date>
+Communities researched: <r/xxx, r/yyy, r/zzz>
+Corpus size: <N posts / M comments, time range xxx>
 
 ---
 
-## 1. 产品理解
+## 1. Product understanding
 
-| 项 | 内容 |
+| Field | Content |
 |---|---|
-| 产品 | <品类 / 形态 / 核心功能 / 当前阶段> |
-| 目标人群 | <具体人群画像 + 使用场景> |
-| 主市场 | <国家或地区> |
-| 行业不满 | <创始人指出的具体问题> |
-| 做这件事的理由 | <动机> |
+| Product | <category / form / core function / current stage> |
+| Target audience | <specific profile + use context> |
+| Primary market | <country or region> |
+| Industry frustration | <the specific problem the founder named> |
+| Reason for doing this | <motive> |
 
 ---
 
-## 2. 机会点
+## 2. Opportunities
 
-### 机会点 1：<一句话概括>  ｜ 强度：高
+### Opportunity 1: <one-line summary> — Strength: high
 
-**痛点证据**（<N> 个作者 / <M> 个帖子）
-> "<原文>"
-> — u/<作者>, r/<社区>, <日期>, <链接>
+**Pain evidence** (<N> authors / <M> threads)
+> "<quote>"
+> — u/<author>, r/<community>, <date>, <link>
 
-> "<原文>"
-> — u/<作者>, r/<社区>, <日期>, <链接>
+> "<quote>"
+> — u/<author>, r/<community>, <date>, <link>
 
-**现有方案不足**
-竞品 <名字>：<做法>，用户不满在 <具体点>
-> "<原文>" — <出处>
+**Where existing solutions fall short**
+<Competitor>: <what they do>; dissatisfaction is <specific point>
+> "<quote>" — <source>
 
-**我们能否解决**：<能 / 部分能> —— <理由>
+**Can we solve it**: <yes / partly> — <reasoning>
 
-<!-- 重复此结构，1-5 个 -->
-
----
-
-## 3. 品牌定位
-
-**定位陈述**
-> 对 <目标人群> 来说，<品牌> 是那个 <解决什么核心痛点> 的 <品类>。
-
-**依据**
-> "<用户原话>" — <出处>
-> "<用户原话>" — <出处>
+<!-- Repeat this structure, 1-5 total -->
 
 ---
 
-## 4. 核心卖点（最多 3 条）
+## 3. Brand positioning
 
-### 卖点 1：<卖点>
-**对应竞品缺陷**：<竞品> 的 <具体问题>
-**依据**：
-> "<用户原话>" — <出处>
+**Positioning statement**
+> For <target audience>, <brand> is the <category> that <solves which core pain>.
 
-### 卖点 2：<卖点>
+**Evidence**
+> "<user's own words>" — <source>
+> "<user's own words>" — <source>
 
-### 卖点 3：<卖点>
+---
+
+## 4. Core selling points (3 max)
+
+### Selling point 1: <point>
+**Competitor shortcoming it answers**: <competitor>'s <specific problem>
+**Evidence**:
+> "<user's own words>" — <source>
+
+### Selling point 2: <point>
+
+### Selling point 3: <point>
 
 ---
 
 ## 5. Slogan
 
-| 候选 | 来源原话 | 出处 |
+| Candidate | Source quote | Link |
 |---|---|---|
-| <候选 1> | "<原话>" | <链接> |
-| <候选 2> | "<原话>" | <链接> |
-| <候选 3> | "<原话>" | <链接> |
+| <candidate 1> | "<quote>" | <link> |
+| <candidate 2> | "<quote>" | <link> |
+| <candidate 3> | "<quote>" | <link> |
 
-**已选**：<候选 N> — <选择理由>
-
----
-
-## 6. 品牌人格
-
-**关键词**：<3-5 个形容词>
-
-**创始人动机**：<阶段 1 的回答>
-
-**用户期待**
-> "<用户原话>" — <出处>
-
-**语气**：<该怎么说话>
-**不该是什么**：<明确排除的调性>
+**Chosen**: <candidate N> — <why>
 
 ---
 
-## 7. 视觉与语言
+## 6. Brand persona
 
-**视觉方向**：<关键词>
-**该有的感觉**：<描述>
-**不该有的感觉**：<描述>
+**Keywords**: <3-5 adjectives>
 
-**语言风格**
-- 人称：<...>
-- 该用的词：<从用户原话来>
-- **禁用词**：<用户明确反感的营销词>
+**Founder's motive**: <the Phase 1 answer>
+
+**User expectations**
+> "<user's own words>" — <source>
+
+**Tone**: <how it should speak>
+**What it must not be**: <explicitly excluded register>
 
 ---
 
-## 8. 落地清单
+## 7. Visual and language
 
-### 渠道
-| 社区 | 允许的参与方式 | 规则要点 | 首次动作 |
+**Visual direction**: <keywords>
+**How it should feel**: <description>
+**How it must not feel**: <description>
+
+**Language style**
+- Person: <...>
+- Words to use: <drawn from users' own words>
+- **Words to avoid**: <marketing language users explicitly resent>
+
+---
+
+## 8. Launch checklist
+
+### Channels
+| Community | Permitted participation | Key rules | First action |
 |---|---|---|---|
-| r/<xxx> | <方式> | <要点> | <动作> |
+| r/<xxx> | <approach> | <rules> | <action> |
 
-### 首批内容
-| # | 针对机会点 | 形式 | 核心信息 |
+### First content
+| # | Targets opportunity | Format | Core message |
 |---|---|---|---|
-| 1 | <机会点> | <形式> | <信息> |
+| 1 | <opportunity> | <format> | <message> |
 
-### 验证指标
-| 假设 | 怎么验证 | 成立标准 | 时间窗 |
+### Validation metrics
+| Hypothesis | How to test | Bar for success | Window |
 |---|---|---|---|
-| <假设> | <方法> | <标准> | <时间> |
+| <hypothesis> | <method> | <bar> | <window> |
 
-### 回退
-| 失败信号 | 回到阶段 |
+### Fallback
+| Failure signal | Return to phase |
 |---|---|
-| 社群里没人有这个痛点 | 2 |
-| 有痛点但没人愿付费 | 3 |
-| 愿付费但不选我们 | 4 |
-| 信息传达不出去 | 5 |
+| Nobody in the community has this pain | 2 |
+| Pain exists but nobody will pay | 3 |
+| They'll pay but not for us | 4 |
+| The message isn't landing | 5 |

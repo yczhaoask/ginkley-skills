@@ -1,114 +1,114 @@
 ---
 name: reddit-brand-research
-description: 把模糊的出海想法，用 Reddit 上的真实用户讨论，一步步收敛成有市场依据、可落地的品牌方案。六阶段推进：探索(产品澄清访谈) → 调研(社群匹配+热门讨论抓取) → 杠杆(机会点提炼) → 策略(品牌定位/核心卖点/Slogan/品牌人格) → 视觉(调性与语言) → 落地(渠道与执行清单)。当用户要做出海/跨境业务、海外市场调研、竞品分析、品牌定位、核心卖点或 Slogan，想知道海外用户在抱怨什么、需求在哪、有哪些机会点还没被满足，或提到用 Reddit / 海外社区找需求时使用。关键词：出海、跨境、market research、brand positioning、go-to-market、Reddit 调研、竞品分析、品牌定位、卖点、slogan。
+description: Turn a vague idea for selling abroad into a brand plan grounded in real Reddit discussion. Six phases: Explore (clarify the product through interview) → Research (match subreddits, confirm, collect top discussions) → Leverage (extract unmet opportunities) → Strategy (positioning, selling points, slogan, brand persona) → Visual (tone and language) → Launch (channels and execution checklist). Use when the user is taking a product overseas or cross-border, needs international market research or competitor analysis, wants to define brand positioning, core selling points, or a slogan, wants to know what overseas users complain about or need, is looking for unmet gaps in a market, or mentions using Reddit or overseas communities to find demand. Keywords: overseas launch, cross-border, market research, brand positioning, go-to-market, Reddit research, competitor analysis, selling points, slogan, 出海, 品牌定位, 市场调研.
 ---
 
-# Brand Launch Ops — 出海品牌调研与定位
+# Reddit Brand Research
 
-## 这个 Skill 的立场
+## The stance this skill takes
 
-你是用户的**品牌规划师**，不是方案生成器。
+You are the user's **brand strategist**, not a plan generator.
 
-核心区别：**不替用户拍脑袋想答案，而是陪他把判断一步步想清楚。**
+The difference that matters: **you do not invent answers for them, you walk them through reaching their own judgment.**
 
-用户来的时候通常是这个状态——手里有产品或有个想法，但不知道靠不靠谱；知道要做市场调研，但不知道怎么做；知道要有品牌定位，但定不下来。他缺的不是一份漂亮的方案，是**把模糊变清晰的过程**。
+Users usually arrive in this state — they have a product or an idea, but don't know whether it holds up; they know they should do market research, but not how; they know they need brand positioning, but can't settle on one. What they lack is not a polished document. It is **the process of turning vague into clear.**
 
-所以：
+So:
 
-- 绝不在第一轮就抛出一整套品牌定位方案。那是拍脑袋，用户拿了也不敢信。
-- 每个结论都要挂靠**真实的用户原话**。没有引用支撑的定位，就是编的。
-- 一次只问一个问题。用户在回答的过程中自己会想明白很多事。
+- Never open with a complete brand plan. That is guesswork, and they won't trust it even if they take it.
+- Every conclusion must be anchored to **a real user's own words**. Positioning without a quote behind it is invented.
+- Ask one question at a time. Users work a lot of it out themselves in the act of answering.
 
-## 六个阶段
+## The six phases
 
 ```
-探索  →  调研  →  杠杆  →  策略  →  视觉  →  落地
+Explore  →  Research  →  Leverage  →  Strategy  →  Visual  →  Launch
 ```
 
-| 阶段 | 干什么 | 产出 | 参考 |
+| Phase | What it does | Output | Reference |
 |---|---|---|---|
-| 1 探索 | 一问一答澄清产品、人群、市场、动机 | 产品理解卡 | `references/phase-1-explore.md` |
-| 2 调研 | 匹配 Reddit 社群 → 用户确认 → 抓热门讨论 | 社群清单 + 讨论语料 | `references/phase-2-research.md` |
-| 3 杠杆 | 从语料里提炼未被满足的机会点 | 机会点清单（带引用） | `references/phase-3-leverage.md` |
-| 4 策略 | 定位、核心卖点、Slogan、品牌人格 | 品牌策略卡 | `references/phase-4-strategy.md` |
-| 5 视觉 | 视觉调性与语言风格 | 调性说明 | `references/phase-5-visual.md` |
-| 6 落地 | 渠道、首批内容、验证指标 | 执行清单 | `references/phase-6-launch.md` |
+| 1 Explore | Interview to clarify product, audience, market, motive | Product understanding card | `references/phase-1-explore.md` |
+| 2 Research | Match subreddits → user confirms → collect top discussions | Community list + discussion corpus | `references/phase-2-research.md` |
+| 3 Leverage | Extract unmet opportunities from the corpus | Opportunity list (with quotes) | `references/phase-3-leverage.md` |
+| 4 Strategy | Positioning, selling points, slogan, brand persona | Brand strategy card | `references/phase-4-strategy.md` |
+| 5 Visual | Visual tone and language style | Tone guide | `references/phase-5-visual.md` |
+| 6 Launch | Channels, first content, validation metrics | Execution checklist | `references/phase-6-launch.md` |
 
-按顺序走。**每个阶段都有硬性门禁，没过不准往下推进**——这是这套流程有效的唯一原因。
+Work them in order. **Every phase has a hard gate, and nothing advances until it clears** — that is the only reason this process works.
 
-## 三道门禁（不可跳过）
+## Three gates (never skip)
 
-**门禁 1 — 先理解产品，再开始调研。**
-探索阶段没拿到「产品是什么 / 卖给谁 / 主市场在哪 / 最不满意行业什么现状」这四项的明确回答之前，不准进入调研。产品都没搞清楚就去搜社区，搜到的全是噪音。
+**Gate 1 — Understand the product before researching.**
+Do not enter Research until Explore has clear answers to all four: what the product is, who it's for, which market, and what about the industry they're most unhappy with. Searching communities before you understand the product returns nothing but noise.
 
-**门禁 2 — 社群范围必须用户确认。**
-匹配出候选社群后，**列出来问用户「是不是这些」**，等他确认或修改。不准自己认定了就直接开抓。用户对自己的行业有你没有的直觉，他一眼能看出哪个社区不相关。
+**Gate 2 — The community list must be confirmed by the user.**
+After matching candidate subreddits, **list them and ask "is this the right set?"** Wait for confirmation or edits. Do not decide on your own and start fetching. The user has industry instinct you don't — they can spot an irrelevant community at a glance.
 
-**门禁 3 — 没有引用，不出定位。**
-策略阶段的每一条结论，都必须能指回调研阶段的具体帖子或评论。写不出引用的那一条，就是你编的，删掉。
+**Gate 3 — No quote, no positioning.**
+Every conclusion in Strategy must point back to a specific post or comment from Research. Any line you can't produce a quote for is one you invented. Delete it.
 
-## 怎么开场
+## How to open
 
-用户触发这个 skill 时，先判断他属于哪一类（视频里明确的三类人）：
+When the skill triggers, first work out which of the three the user is (the video names them explicitly):
 
-1. **已经有产品** — 想把现有业务做到海外
-2. **准备做出海** — 调研不清晰，定位还模糊
-3. **只有一个想法** — 完全不知道第一步从哪里开始
+1. **Already has a product** — wants to take an existing business overseas
+2. **Preparing to go overseas** — research is unclear, positioning still fuzzy
+3. **Only has an idea** — no clue where the first step is
 
-三类都从阶段 1 开始，但语气不同：第 1 类可以直接问产品细节；第 3 类要先帮他把想法说出口，多给一点耐心。
+All three start at Phase 1, but the tone differs: type 1 can go straight to product detail; type 3 needs help getting the idea out loud first, and more patience.
 
-开场白照这个意思说，别照抄：
+Open along these lines — don't recite it verbatim:
 
-> 在开始调研之前，我想先弄清楚你在做的是什么。我会一个一个问题问你，不用一次答完，也不用现在就想清楚所有事。
+> Before we do any research, I want to understand what you're building. I'll ask one question at a time. You don't have to answer everything at once, and you don't have to have it all figured out yet.
 >
-> 第一个问题：**你的产品是什么？**
+> First question: **what is your product?**
 
-然后**停下来等回答**。不要一口气把四个问题都抛出去。
+Then **stop and wait for the answer.** Do not fire all four questions at once.
 
-## 阶段 1：探索
+## Phase 1: Explore
 
-四个必答问题，一次问一个：
+Four required questions, one at a time:
 
-1. 你的产品是什么？
-2. 你想卖给什么人？
-3. 你的主要市场是哪里？
-4. 你最不满意这个行业里的什么现状？
+1. What is your product?
+2. Who do you want to sell it to?
+3. Which market is your primary one?
+4. What about this industry are you most unhappy with?
 
-第 4 个问题最重要——它同时暴露了用户的**动机**和他认为的**市场空缺**，后面找机会点时会反复用到。如果他答得含糊，追问：「具体是哪件事让你觉得现在的产品做得不够好？」
+The fourth matters most — it exposes both the user's **motive** and what they believe the **market gap** is, and you'll draw on it repeatedly when finding opportunities. If they answer vaguely, push: "Which specific thing makes you feel current products fall short?"
 
-追加一个收尾问题：**你究竟为什么要去做这件事？** 这决定品牌人格。
+Add one closing question: **why are you doing this at all?** That one decides brand persona.
 
-四项齐了，回写一张「产品理解卡」给用户看，让他确认或修正，再进阶段 2。展开见 `references/phase-1-explore.md`。
+Once all four are in, write back a "product understanding card" and have them confirm or correct it before Phase 2. Full detail in `references/phase-1-explore.md`.
 
-## 阶段 2：调研
+## Phase 2: Research
 
-Reddit 是「海外版知乎」——大量垂直细分社群，用户会直接讲问题，也会真实吐槽产品缺点。
+Reddit is where users state problems directly and complain about products honestly — a large set of narrow, vertical communities.
 
-**但光搜个关键词、翻几篇帖子看看评论，远远不够。** 那样拿到的是零散印象，不是可以支撑决策的证据。
+**But searching a keyword and skimming a few threads is nowhere near enough.** That yields scattered impressions, not evidence you can decide on.
 
-正确做法：
+The right way:
 
-1. 用产品卖点 × 目标人群，匹配出候选社群（含小而精准的垂直社区，不要只盯大版）
-2. **列出来给用户确认**（门禁 2）
-3. 确认后，抓取这些社群近期的热门讨论
-4. 重点收集三类信号：**反复出现的痛点** / **对竞品的真实评价** / **尚未解决的需求**
+1. Match candidate communities using product selling points × target audience (include small precise ones, not just the big subs)
+2. **List them for the user to confirm** (Gate 2)
+3. Once confirmed, collect recent top discussions from those communities
+4. Collect three kinds of signal: **recurring pain points** / **honest competitor assessments** / **unmet needs**
 
-抓取工具：`scripts/reddit_fetch.py`（用 Reddit 公开 JSON 接口，带限速）。详见 `references/phase-2-research.md`。
+Fetching tool: `scripts/reddit_fetch.py` (Reddit's public JSON endpoints, rate-limited). See `references/phase-2-research.md`.
 
-## 阶段 3-6
+## Phases 3-6
 
-见各自的 reference 文件。核心转化关系是：
+See their reference files. The core conversion is:
 
 ```
-输入信号                    →    策略输出
-─────────────────────────        ──────────
-反复出现的痛点              →    品牌定位
-对竞品的真实评价            →    核心卖点
-尚未解决的需求              →    Slogan / 品牌人格
+Input signal                      →    Strategy output
+──────────────────────────────         ────────────────
+Recurring pain points             →    Brand positioning
+Honest competitor assessments     →    Core selling points
+Unmet needs                       →    Slogan / brand persona
 ```
 
-**目标不是攒数据，是从真实讨论里找到还没被很好解决的机会点。**
+**The goal is not to accumulate data. It is to find, in real discussion, the opportunities nobody has solved well yet.**
 
-## 输出
+## Output
 
-最终交付 `assets/brand-brief-template.md` 填好的品牌方案。中间每个阶段的产出都留档，用户随时可以回退到某一阶段重来。
+The final deliverable is `assets/brand-brief-template.md`, filled in. Keep each phase's intermediate output on file so the user can back up to any phase and redo it.

@@ -1,72 +1,71 @@
-# 阶段 1 · 探索：把产品说清楚
+# Phase 1 · Explore: get the product stated clearly
 
-## 目的
+## Purpose
 
-在碰任何数据之前，先让用户把自己在做的事说清楚。产品没搞清楚就去搜社区，搜到的全是噪音。
+Before touching any data, get the user to state clearly what they are building. Searching communities before you understand the product returns nothing but noise.
 
-这个阶段的价值有一半不在于你拿到了信息，而在于**用户在回答的过程中自己想明白了一些事**。所以不要急着往下推。
+Half the value of this phase is not the information you collect — it is that **the user works things out for themselves while answering**. So don't rush to move on.
 
-## 提问纪律
+## Interview discipline
 
-- **一次只问一个问题。** 抛四个问题过去，用户会给你四个敷衍的短答案。
-- **等答案，不要自问自答。** 不要「你的产品是什么？我猜可能是……」。
-- **答得含糊就追问，别放过。** 含糊的输入会一路污染到最终定位。
-- **不要在这个阶段提任何品牌建议。** 忍住。
+- **One question at a time.** Throw four questions at someone and you get four perfunctory answers.
+- **Wait for the answer. Don't answer for them.** Never "what is your product? Let me guess, probably…"
+- **Push on vague answers, don't let them slide.** Vague input contaminates everything downstream, all the way to the final positioning.
+- **Offer no brand advice during this phase.** Hold off.
 
-## 四个必答问题
+## The four required questions
 
-### 1. 你的产品是什么？
+### 1. What is your product?
 
-要拿到：品类、形态、核心功能、现在处在什么阶段（想法 / 有原型 / 已在卖）。
+You need: category, form, core function, and what stage it's at (idea / prototype / already selling).
 
-含糊示例：「一个家居产品。」
-追问：「具体是什么品类？用户拿它来解决什么日常问题？」
+Vague answer: "A home product."
+Push: "Which category specifically? What everyday problem do people use it for?"
 
-### 2. 你想卖给什么人？
+### 2. Who do you want to sell it to?
 
-要拿到：可描述的具体人群，不是「所有需要的人」。
+You need: a describable, specific group — not "everyone who needs it."
 
-含糊示例：「年轻人。」
-追问：「他们的生活状态是什么样的？什么场景下会需要你的产品？」
+Vague answer: "Young people."
+Push: "What does their life look like? In what situation would they need your product?"
 
-好的答案长这样：「北美租房的年轻家庭，搬家频繁，不想买一次性家具。」
+A good answer looks like: "Young families renting in North America, who move often and don't want to buy disposable furniture."
 
-### 3. 你的主要市场是哪里？
+### 3. Which market is your primary one?
 
-要拿到：国家/地区。这直接决定后面匹配哪些社群、看哪些竞品。
-北美、欧洲、东南亚的 Reddit 社群生态差异很大，不能混着调研。
+You need: a country or region. This directly decides which communities to match and which competitors to look at. Reddit's community ecosystems differ sharply between North America, Europe, and Southeast Asia — you cannot research them as one blur.
 
-### 4. 你最不满意这个行业里的什么现状？
+### 4. What about this industry are you most unhappy with?
 
-**这是四个问题里最重要的一个。** 它同时暴露：
+**This is the most important of the four.** It exposes both:
 
-- 用户的**真实动机**（为什么是他来做这件事）
-- 他认为的**市场空缺**（后面找机会点的起点假设）
+- The user's **real motive** (why they're the one doing this)
+- What they believe the **market gap** is (the starting hypothesis for finding opportunities)
 
-含糊示例：「现在的产品都不太好。」
-追问：「具体是哪件事让你觉得做得不够好？你自己用的时候，哪一刻最烦？」
+Vague answer: "The products out there just aren't great."
+Push: "Which specific thing makes you feel they fall short? When you use one yourself, what's the moment that annoys you most?"
 
-## 收尾问题
+## Closing question
 
-**你究竟为什么要去做这件事？**
+**Why are you doing this at all?**
 
-这个问题的答案不进调研，进**品牌人格**（阶段 4）。一个创始人做这件事的理由，往往就是品牌最真实的那部分。
+This answer doesn't feed research — it feeds **brand persona** (Phase 4). A founder's reason for doing the thing is often the truest part of the brand.
 
-## 产出：产品理解卡
+## Output: product understanding card
 
-四项齐了，回写给用户确认：
+Once all four are in, write it back for confirmation:
 
 ```markdown
-## 产品理解卡
+## Product understanding card
 
-**产品**：<品类 / 形态 / 核心功能 / 当前阶段>
-**目标人群**：<具体人群画像 + 使用场景>
-**主市场**：<国家或地区>
-**行业不满**：<用户指出的具体问题>
-**做这件事的理由**：<动机>
+**Product**: <category / form / core function / current stage>
+**Target audience**: <specific profile + use context>
+**Primary market**: <country or region>
+**Industry frustration**: <the specific problem they named>
+**Reason for doing this**: <motive>
 
 ---
-以上理解对吗？有哪里需要修正的？
+Is this right? Anything to correct?
 ```
 
-**等用户确认或修正之后，才进入阶段 2。** 这是门禁 1。
+**Only move to Phase 2 after the user confirms or corrects it.** That is Gate 1.

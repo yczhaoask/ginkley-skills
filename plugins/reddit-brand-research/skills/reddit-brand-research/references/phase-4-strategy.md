@@ -1,92 +1,93 @@
-# 阶段 4 · 策略：定位、卖点、Slogan、品牌人格
+# Phase 4 · Strategy: positioning, selling points, slogan, persona
 
-## 转化关系
+## The conversion
 
-阶段 2-3 的信号，按这个对应关系转成策略输出：
+Signals from Phases 2-3 convert into strategy outputs along these lines:
 
 ```
-输入信号                    →    策略输出
-─────────────────────────        ──────────
-反复出现的痛点              →    品牌定位
-对竞品的真实评价            →    核心卖点
-尚未解决的需求              →    Slogan / 品牌人格
+Input signal                      →    Strategy output
+──────────────────────────────         ────────────────
+Recurring pain points             →    Brand positioning
+Honest competitor assessments     →    Core selling points
+Unmet needs                       →    Slogan / brand persona
 ```
 
-## 门禁 3：没有引用，不出定位
+## Gate 3: no quote, no positioning
 
-**每一条结论都必须能指回阶段 2 的具体帖子或评论。**
+**Every conclusion must point back to a specific post or comment from Phase 2.**
 
-写不出引用的那一条，就是你编的。删掉，或者回阶段 2 补调研。
+Any line you can't produce a quote for is one you invented. Delete it, or go back to Phase 2 and fill the gap.
 
-这条纪律是整套流程的价值所在。用户要的不是一份看起来专业的品牌方案——那种东西 AI 三秒钟能生成一百份，他拿了也不敢信。他要的是**每句话背后都有真实用户在说话**的方案。
+This discipline is where the whole process gets its value. The user does not want a document that looks professional — an AI can generate a hundred of those in three seconds, and they wouldn't trust any of them. They want a plan where **every sentence has a real user standing behind it.**
 
-## 四项输出
+## The four outputs
 
-### 1. 品牌定位
+### 1. Brand positioning
 
-一句话回答：**对<谁>来说，<品牌>是那个<解决什么核心痛点>的<品类>。**
+One sentence: **For <whom>, <brand> is the <category> that <solves which core pain>.**
 
-来源：机会点清单里强度最高的那个痛点。
+Source: the highest-strength pain point on the opportunity list.
 
 ```markdown
-**定位**：对频繁搬家的北美年轻家庭来说，X 是那个「买一次就不用再换」的家居品牌。
+**Positioning**: For North American young families who move often, X is the home
+brand you buy once and never replace.
 
-**依据**：
-> "Third one in two years. I'm done." — u/xxx, r/BuyItForLife, <链接>
-> "I want something I can hand down." — u/yyy, r/HomeImprovement, <链接>
-（反复出现的痛点，7 个作者 / 5 个帖子）
+**Evidence**:
+> "Third one in two years. I'm done." — u/xxx, r/BuyItForLife, <link>
+> "I want something I can hand down." — u/yyy, r/HomeImprovement, <link>
+(Recurring pain point, 7 authors / 5 threads)
 ```
 
-### 2. 核心卖点
+### 2. Core selling points
 
-**3 条以内。** 每条直接对应一个竞品缺陷。
+**Three at most.** Each maps directly to one competitor shortcoming.
 
 ```markdown
-**卖点 1**：<卖点>
-**对应竞品缺陷**：<竞品名> 的 <具体问题>
-**依据**：
-> <用户原话> — <出处>
+**Selling point 1**: <point>
+**Competitor shortcoming it answers**: <competitor>'s <specific problem>
+**Evidence**:
+> <user's own words> — <source>
 ```
 
-超过 3 条就不是卖点了，是功能列表。用户记不住。
+More than three and it stops being selling points and becomes a feature list. Nobody remembers it.
 
 ### 3. Slogan
 
-从「尚未解决的需求」里提炼。**优先直接用用户自己的话**——他们的原话几乎总是比你想的措辞更有力。
+Draw from the "unmet needs" signals. **Prefer the users' own words** — their phrasing is almost always stronger than anything you'd compose.
 
-给 3 个候选，标注各自来自哪句用户原话，让用户选。
-
-```markdown
-**候选 1**：<slogan>
-来源：> "<用户原话>" — <出处>
-
-**候选 2**：...
-```
-
-不要自己拍板选一个。这是用户的品牌。
-
-### 4. 品牌人格
-
-来源有两个，要合：
-
-- 阶段 1 的收尾问题：**用户为什么要做这件事**
-- 阶段 2 的「尚未解决的需求」里透出的用户期待
+Offer 3 candidates, each tagged with the quote it came from, and let the user choose.
 
 ```markdown
-**品牌人格**：<3-5 个形容词 + 一段说明>
+**Candidate 1**: <slogan>
+Source: > "<user's own words>" — <source>
 
-**创始人动机**：<阶段 1 的回答>
-**用户期待**：
-> <原文引用> — <出处>
-
-**语气**：<该怎么说话>
-**不该是什么**：<明确排除的调性>
+**Candidate 2**: ...
 ```
 
-「不该是什么」这一栏经常比「是什么」更有用。
+Don't pick one yourself. It's their brand.
 
-## 产出
+### 4. Brand persona
 
-填好 `assets/brand-brief-template.md`，逐条过给用户确认。
+Two sources, combined:
 
-**过的时候一条一条问，不要整份丢过去让他看。** 一条一条确认，他会在过程中改主意——那些改动才是他真正想清楚的东西。
+- The Phase 1 closing question: **why the user is doing this**
+- The expectations showing through the "unmet needs" signals in Phase 2
+
+```markdown
+**Brand persona**: <3-5 adjectives + a paragraph>
+
+**Founder's motive**: <the Phase 1 answer>
+**User expectations**:
+> <quote> — <source>
+
+**Tone**: <how it should speak>
+**What it must not be**: <explicitly excluded register>
+```
+
+The "what it must not be" line is often more useful than "what it is."
+
+## Output
+
+Fill in `assets/brand-brief-template.md` and walk the user through it for confirmation.
+
+**Go through it one line at a time — don't hand over the whole document at once.** Confirming line by line, they will change their mind about things, and those changes are what they actually thought through.

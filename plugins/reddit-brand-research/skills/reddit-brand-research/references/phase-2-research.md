@@ -1,64 +1,64 @@
-# 阶段 2 · 调研：Reddit 社群匹配与讨论抓取
+# Phase 2 · Research: match communities and collect discussion
 
-## 为什么是 Reddit
+## Why Reddit
 
-Reddit 可以理解成「海外版知乎」：大量垂直细分社群，用户会直接讲问题，也会真实吐槽产品缺点。
+Reddit hosts a large set of narrow, vertical communities where users state problems directly and complain about products honestly.
 
-对出海调研来说，它的独特价值是——**这些话不是说给品牌听的**。用户在社区里抱怨的时候，没想过会被厂商看到，所以比问卷、比评论区真实得多。
+Its distinct value for overseas research: **these things are not said for a brand's benefit.** When someone complains in a community, they aren't picturing a vendor reading it — so it is far more honest than a survey or a review section.
 
-## 但关键词搜几篇帖子远远不够
+## But searching a keyword and skimming threads is nowhere near enough
 
-常见的错误做法：搜个产品关键词 → 翻两页帖子 → 看看评论 → 觉得调研做完了。
+The common mistake: search a product keyword → skim two pages → read some comments → call the research done.
 
-问题在于：
+The problems with that:
 
-- 关键词命中的是**已经在讨论这个品类**的人，漏掉了「有这个痛点但不知道有产品能解决」的人
-- 单篇帖子是个例，**看不出哪个痛点是反复出现的**
-- 没有社群上下文，分不清这是普遍抱怨还是某个人的偏好
+- Keywords only hit people **already discussing the category**, missing everyone who has the pain but doesn't know a product exists for it
+- A single thread is an anecdote — **you cannot tell which pain points recur**
+- Without community context, you can't separate a widespread complaint from one person's preference
 
-正确做法是**先锁定社群，再在社群内部做系统性收集**。
+The right approach is to **lock down the communities first, then collect systematically inside them.**
 
-## 步骤
+## Steps
 
-### 1. 匹配候选社群
+### 1. Match candidate communities
 
-用「产品卖点 × 目标人群」两个维度去找，每个维度都要覆盖：
+Search along two dimensions — cover both:
 
-- **品类社群** — 直接讨论这个产品类别的地方
-- **人群社群** — 目标用户聚集但不一定聊这个品类的地方（这里往往有更原始的痛点）
-- **场景社群** — 围绕使用场景组织的社区
-- **商业社群** — 如 r/Entrepreneur，能看到同行怎么想
+- **Category communities** — where this product class is discussed directly
+- **Audience communities** — where the target users gather, even if the category isn't the topic (raw pain points often live here)
+- **Context communities** — organized around the use situation
+- **Business communities** — e.g. r/Entrepreneur, where you can see how peers think
 
-**不要只盯大版。** 小而精准的垂直社区信噪比高得多。50 万人的泛品类版块，不如 3 万人的专门社区。
+**Don't only chase the big subs.** Small, precise communities have a far better signal-to-noise ratio. A 30k-member dedicated community beats a 500k-member general one.
 
-发现社群可以用：
+To discover communities:
 
 ```bash
-python3 scripts/reddit_fetch.py discover --query "<关键词>" --limit 25
+python3 scripts/reddit_fetch.py discover --query "<keywords>" --limit 25
 ```
 
-### 2. 列出来给用户确认（门禁 2）
+### 2. List them for the user to confirm (Gate 2)
 
-**这一步不能省。** 用户对自己的行业有你没有的直觉，他一眼能看出哪个社区不相关。
+**This step cannot be skipped.** The user has industry instinct you don't — they can spot an irrelevant community at a glance.
 
-格式：
+Format:
 
 ```markdown
-## 建议关注的社区
+## Suggested communities
 
-| 社区 | 订阅数 | 为什么选它 |
+| Community | Subscribers | Why this one |
 |---|---|---|
-| r/HomeImprovement | 2.4M | 家装体验，目标人群聚集 |
-| r/BuyItForLife | 1.1M | 耐用消费观，直接对应你的卖点 |
-| r/Entrepreneur | 3.8M | 商业需求视角，能看到同行判断 |
+| r/HomeImprovement | 2.4M | Home renovation experience, target audience gathers here |
+| r/BuyItForLife | 1.1M | Durability mindset, maps directly to your selling point |
+| r/Entrepreneur | 3.8M | Business perspective, shows how peers judge this |
 
 ---
-这个范围对吗？要加哪些、去掉哪些？
+Is this the right set? Anything to add or drop?
 ```
 
-等确认。确认之后才开抓。
+Wait for confirmation. Only then start fetching.
 
-### 3. 抓取近期热门讨论
+### 3. Collect recent top discussions
 
 ```bash
 python3 scripts/reddit_fetch.py fetch \
@@ -67,7 +67,7 @@ python3 scripts/reddit_fetch.py fetch \
   --out research/raw.json
 ```
 
-补充针对性检索（找特定痛点）：
+Targeted search for specific pain points:
 
 ```bash
 python3 scripts/reddit_fetch.py search \
@@ -75,33 +75,33 @@ python3 scripts/reddit_fetch.py search \
   --out research/pain.json
 ```
 
-### 4. 收集三类信号
+### 4. Collect three kinds of signal
 
-抓下来的语料，只挑这三类，其余的丢掉：
+From the collected corpus, keep only these three. Discard the rest:
 
-| 信号 | 长什么样 | 后面用来干什么 |
+| Signal | What it looks like | What it feeds |
 |---|---|---|
-| **反复出现的痛点** | 不同的人、不同的帖子，反复抱怨同一件事 | → 品牌定位 |
-| **对竞品的真实评价** | 具体点名某产品好在哪、烂在哪 | → 核心卖点 |
-| **尚未解决的需求** | 「我希望有个东西能……」「为什么没人做……」 | → Slogan / 品牌人格 |
+| **Recurring pain points** | Different people, different threads, complaining about the same thing | → Brand positioning |
+| **Honest competitor assessments** | Naming a specific product and what's good or bad about it | → Core selling points |
+| **Unmet needs** | "I wish something could…" / "Why does nobody make…" | → Slogan / brand persona |
 
-**判断「反复出现」的标准**：至少 3 个不同作者、在不同帖子里提到同一件事。1-2 次是个例，不要当成趋势。
+**The bar for "recurring"**: at least 3 different authors, in different threads, raising the same thing. One or two is an anecdote — don't treat it as a trend.
 
-## 产出：调研语料库
+## Output: the discussion corpus
 
-每条信号都要留下**可回溯的原文和链接**：
+Every signal needs **traceable original text and a link**:
 
 ```markdown
-### 信号：便宜产品用两年就坏，用户宁愿多花钱买耐用的
+### Signal: cheap products break within two years; users would rather pay more for durability
 
-**类型**：反复出现的痛点
-**出现频次**：7 个不同作者 / 5 个帖子
+**Type**: Recurring pain point
+**Frequency**: 7 different authors / 5 threads
 
 > "I'm done buying the cheap ones. Third one in two years."
-> — u/xxx, r/BuyItForLife, 2024-03, <链接>
+> — u/xxx, r/BuyItForLife, 2024-03, <link>
 
 > "I want something I can hand down to my kid, not throw away."
-> — u/yyy, r/HomeImprovement, 2024-05, <链接>
+> — u/yyy, r/HomeImprovement, 2024-05, <link>
 ```
 
-**没有原文引用的信号不算数。** 这是门禁 3 的前置条件——阶段 4 的每条结论都要能指回这里。
+**A signal without a quote doesn't count.** This is the precondition for Gate 3 — every conclusion in Phase 4 must point back here.
