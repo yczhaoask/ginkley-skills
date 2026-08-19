@@ -76,6 +76,8 @@ Four required questions, one at a time:
 
 The fourth matters most — it exposes both the user's **motive** and what they believe the **market gap** is, and you'll draw on it repeatedly when finding opportunities. If they answer vaguely, push: "Which specific thing makes you feel current products fall short?"
 
+If question 2 turns up **two audiences** — a marketplace, a platform, anything with a supply side and a demand side — split it before profiling: name both sides, ask which one they are actually pushing on right now, and research only that one. "Both" produces a keyword soup in Phase 2 that finds neither. See `references/phase-1-explore.md`.
+
 Add one closing question: **why are you doing this at all?** That one decides brand persona.
 
 Once all four are in, write back a "product understanding card" and have them confirm or correct it before Phase 2. Full detail in `references/phase-1-explore.md`.
