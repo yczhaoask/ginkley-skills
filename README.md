@@ -66,17 +66,17 @@ python3 reddit_fetch.py search --subs BuyItForLife \
 
 大批量或商业用途请按 Reddit 的 API 条款注册应用改走 OAuth。参与社区讨论前先读该 subreddit 的 rules——直接发广告会被封。
 
-## 方法论来源与致谢
+## Attribution
 
-**这套方法论不是我原创的。** 它整理自一个讲「如何用 Reddit 做出海产品调研与品牌定位」的中文短视频。
+This methodology is not my own. It was distilled from a short video on the Chinese-language internet.
 
-原作者在视频中演示了他自己实现的一个同名流程工具——本仓库**不是**那个工具，与原作者也没有任何关联。这里是我根据视频中公开阐述的方法论**独立编写**的 Claude Code skill 实现，措辞、文件结构、门禁设计与附带脚本均为本仓库原创。
+In that video the original author demonstrated a workflow tool of their own making that shares its name — this repository is not that tool, and has no affiliation with its author. What follows is an independent implementation that I wrote from the methodology as publicly described in the video.
 
-原视频的作者信息与链接暂未在此列出。如果你认得这个视频，欢迎开 issue 告知，我会补上署名。
+The original video's author and link are not listed here at this time.
 
-需要说明的是，原视频完整讲解了六个阶段中的**探索、调研、杠杆、策略**四个；**视觉**与**落地**两个阶段在视频里只作为流程标签出现、未展开内容，本仓库中这两个阶段是按整套方法论的一致逻辑补全的推断内容，相应文件顶部已明确标注。
+Note that the video explains four of the six phases in full: explore, research, leverage, and strategy. Visual and launch appear only as labels in its progress bar and are never elaborated; those two phases in this repository are reasoned extensions consistent with the rest of the methodology, and each of those files says so at the top.
 
-如果你是原作者，希望调整此处的署名方式或要求下架，请开一个 issue。
+If you are the original author and would like the credit adjusted, or want this taken down, please open an issue.
 
 ## License
 
