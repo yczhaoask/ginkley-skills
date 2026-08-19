@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "ginkley-skills",
+  "description": "出海与品牌方向的 Claude Code skills",
+  "owner": {
+    "name": "yczhaoask",
+    "url": "https://github.com/yczhaoask"
+  },
+  "plugins": [
+    {
+      "name": "reddit-brand-research",
+      "source": "./plugins/reddit-brand-research",
+      "description": "用 Reddit 真实用户讨论驱动出海市场调研与品牌定位：六阶段访谈式流程，把模糊的出海想法收敛成有引用依据的品牌方案。",
+      "version": "0.1.0",
+      "author": {
+        "name": "yczhaoask",
+        "url": "https://github.com/yczhaoask"
+      },
+      "license": "MIT",
+      "category": "research",
+      "keywords": ["reddit", "market-research", "brand-positioning", "go-to-market", "出海", "品牌定位", "市场调研"]
+    }
+  ]
+}

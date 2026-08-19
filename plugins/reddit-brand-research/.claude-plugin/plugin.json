@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "reddit-brand-research",
+  "displayName": "Reddit Brand Research",
+  "version": "0.1.0",
+  "description": "用 Reddit 真实用户讨论驱动出海市场调研与品牌定位：六阶段访谈式流程，把模糊的出海想法收敛成有引用依据的品牌方案。",
+  "author": {
+    "name": "yczhaoask",
+    "url": "https://github.com/yczhaoask"
+  },
+  "license": "MIT",
+  "keywords": ["reddit", "market-research", "brand-positioning", "go-to-market", "出海", "品牌定位", "市场调研"]
+}
