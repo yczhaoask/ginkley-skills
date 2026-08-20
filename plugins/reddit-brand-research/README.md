@@ -1,6 +1,6 @@
 # Reddit Brand Research
 
-> Turn a vague idea for selling abroad into a brand plan grounded in real Reddit discussion.
+> Turn a vague idea for selling abroad into a brand plan grounded in real social media discussion.
 
 A Claude Code skill. It does not generate a plan for you — it **walks you to your own judgment**: clarifying the product through interview, matching and confirming communities, collecting real discussion, then converting the recurring signals into brand positioning.
 
