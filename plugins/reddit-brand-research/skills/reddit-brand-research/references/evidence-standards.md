@@ -7,7 +7,7 @@ violation cost a round of work or produced a wrong conclusion.
 
 ## 1. Not all quotes are equal
 
-Gate 3 says "no quote, no positioning." That is necessary but not sufficient — a
+Door 4 says "no quote, no positioning." That is necessary but not sufficient — a
 marketing post is also a real quote. Grade every piece of evidence before you use it:
 
 | Tier | What it is | How to spot it | Weight |

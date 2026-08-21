@@ -50,7 +50,7 @@ To discover communities:
 python3 scripts/reddit_fetch.py discover --query "<keywords>" --limit 25
 ```
 
-### 2. List them for the user to confirm (Gate 2)
+### 2. List them for the user to confirm
 
 **This step cannot be skipped.** The user has industry instinct you don't — they can spot an irrelevant community at a glance.
 
@@ -71,7 +71,7 @@ Is this the right set? Anything to add or drop?
 
 Wait for confirmation.
 
-### 2b. Then run the reach test (Gate 2b)
+### 2b. Then run the reach test
 
 Confirmation means the user thinks these communities are *relevant*. It does not mean
 the people who would pay are *in* them. Before fetching, answer three questions out
@@ -143,7 +143,7 @@ Every signal needs **traceable original text and a link**:
 > — u/yyy, r/HomeImprovement, 2024-05, <link>
 ```
 
-**A signal without a quote doesn't count.** This is the precondition for Gate 3 — every conclusion in Phase 4 must point back here.
+**A signal without a quote doesn't count.** This is the precondition for Door 4 — every conclusion in Strategy must point back here.
 
 ## Every quote carries a tier and a side
 
@@ -196,7 +196,7 @@ Keep it as you go; it goes out with the report:
 The "new clusters" column is your saturation curve. It is also the only honest way to
 answer "did you look into X?" later.
 
-## Gate 2c — hand over the findings, then stop
+## Door 2 — hand over the findings, then stop
 
 When the round is complete, **deliver the market signals on their own and wait.**
 

@@ -25,7 +25,7 @@ different keywords, getting the same shape of answer twice, and concluding the a
 robust. It was the instrument talking, not the market. If two rounds in one pool
 disagree with your hypothesis in the same way, change pool before you change conclusion.
 
-## 2. Gate 2b — the reach test
+## 2. The reach test
 
 Run this **after** the user confirms the community list and **before** you fetch
 anything. Three questions, answered out loud:

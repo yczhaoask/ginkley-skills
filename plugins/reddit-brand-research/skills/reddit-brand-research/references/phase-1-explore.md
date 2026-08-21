@@ -38,7 +38,7 @@ they have an idea and no audience in mind yet. That is the type-3 user from the 
 and pushing harder on the same question just produces a guess, which is worse than an
 admission.
 
-**Do not stall at Gate 1 and do not invent an audience for them.** Run a short probe
+**Do not stall at Door 1 and do not invent an audience for them.** Run a short probe
 instead: a cheap exploratory pass whose job is to *locate candidate populations*, not to
 produce findings.
 
@@ -149,5 +149,5 @@ Then ask both handoff questions, not just the first:
 > the communities to research?**
 
 **Only move to Phase 2 after an explicit yes to the second.** A corrected card is not
-the same as permission to advance. That is Gate 1; the full protocol is in
+the same as permission to advance. That is Door 1; the full protocol is in
 `references/phase-handoff.md`.

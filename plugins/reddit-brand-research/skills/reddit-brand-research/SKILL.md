@@ -58,29 +58,63 @@ If a correction is material, redo that phase's work and run the handoff again ra
 
 Work them in order. **Every phase has a hard gate, and nothing advances until it clears** — that is the only reason this process works.
 
-## Six gates (never skip)
+## The six doors
 
-**Gate 1 — Understand the product before researching.**
-Do not enter Research until Explore has clear answers to all four: what the product is, who it's for, which market, and what about the industry they're most unhappy with. Searching communities before you understand the product returns nothing but noise.
+**The six doors are the six phases.** Each phase has an exit, the exit has conditions,
+and the user opens it — you never do. There is no separate numbering to remember: if you
+know which phase you are in, you know which door is next.
 
-*Exception, not a loophole:* if the user genuinely does not know who the product is for, run the **audience probe** in `references/phase-1-explore.md` — a bounded three-search pass that comes back with candidate populations for them to choose between. Probe results locate an audience; they are never cited as evidence later.
+Everything else in this skill is a *requirement of some phase*, listed under its door.
 
-**Gate 2 — The community list must be confirmed by the user.**
-After matching candidate subreddits, **list them and ask "is this the right set?"** Wait for confirmation or edits. Do not decide on your own and start fetching. The user has industry instinct you don't — they can spot an irrelevant community at a glance.
+---
 
-**Gate 2b — Does this pool actually contain your buyer?**
-Confirmation means the communities look *relevant*, not that the people who would pay are *in* them. Before fetching, answer three questions out loud: are the buyers here, or only people discussing the topic? Is the speaker the buyer or **the buyer's customer**? Which side of the product is this pool on? See `references/instruments.md`.
+**Door 1 · leaving Explore** — you can state the product back to them
+Four questions answered concretely: what it is, who for, which market, what about the
+industry frustrates them. Audience must be a specific describable group. If they can't
+name one, run the audience probe (`references/phase-1-explore.md`) rather than guessing
+or stalling. Two-sided product → split the sides and pick the one being pushed now.
+*Card confirmed, and an explicit yes to move on.*
 
-Picking the wrong pool throws no error — it returns a full round of plausible, well-quoted findings from the wrong population. **That costs more than a crash.**
+**Door 2 · leaving Research** — the corpus is saturated and came from the right pool
+Inside this phase: match communities → **user confirms the list** → **reach test** (are
+the buyers here, or only people discussing the topic — and is the speaker the buyer or
+the buyer's customer?) → preflight the fetcher → collect. Done means **saturated**: the
+last batch added no new signal cluster. All four community types covered, disconfirming
+vocabulary searched, every query in the search log.
+*Signals and search log delivered as their own message — no opportunities, no preview —
+then an explicit yes.*
 
-**Gate 3 — No quote, no positioning.**
-Every conclusion in Strategy must point back to a specific post or comment from Research. Any line you can't produce a quote for is one you invented. Delete it.
+**Door 3 · leaving Leverage** — the opportunities survive their own evidence test
+Each one: real recurring pain (≥3 authors), existing solutions miss it, you can solve
+it, evidence is **Tier A or B** (marketing copy is not a pain point), and all its
+evidence is from **one side**. Single-quote mechanisms and untested angles go on
+separate hypothesis and not-tested lists, never the ranked one.
+*Opportunities delivered alone, then: is the direction clear, and do you want the
+strategy built on this? **The most expensive door — don't read interest as instruction.***
 
-**Gate 2c — Findings go out on their own, and Leverage waits for a yes.**
-When Research is complete, deliver the market signals and the search log **as their own message** and stop. Do not include opportunities, and do not preview them. Then run the handoff above. Phase 3 does not start until the user says it can.
+**Door 4 · leaving Strategy** — nothing in it was invented
+Every conclusion points to a specific post or comment, and each quote carries its tier
+and its side. One positioning per side; if a single sentence serves both, two
+populations got merged. Anything you can't produce a quote for gets deleted.
+*Explicit yes.*
 
-**Gate 3b — A quote alone is not enough.**
-Marketing copy is also a real quote and will pass a naive reading of Gate 3. Every supporting quote must additionally carry **a tier** (unprompted first-hand · prompted · marketing narrative · second-hand) and **a side** (supply · demand). Marketing narrative is never evidence of a pain point, and one positioning never rests on quotes from two sides. See `references/evidence-standards.md`.
+**Door 5 · leaving Visual** — the tone came from the corpus, not from taste
+The words come from how users in the corpus praise and criticise — their vocabulary, not
+yours. The avoid-list matters more than the use-list: every phrase the corpus mocks as
+marketing BS goes on it.
+*Explicit yes.*
+
+**Door 6 · leaving Launch** — it can be checked against reality
+Channels are the communities you actually researched. Validation thresholds written
+**before** running, so a weak result can't be reinterpreted as "not bad". Fallback
+mapped: which phase you return to for each kind of failure.
+*Then raise the report yourself — assemble it? which format? full or summary?*
+
+---
+
+Full protocol for how each door works — and what does **not** count as a yes — in
+`references/phase-handoff.md`. **Inside a phase, just work; the doors are the only
+place you stop.**
 
 ## How to open
 
@@ -128,7 +162,7 @@ Reddit is where users state problems directly and complain about products honest
 The right way:
 
 1. Match candidate communities using product selling points × target audience (include small precise ones, not just the big subs)
-2. **List them for the user to confirm** (Gate 2)
+2. **List them for the user to confirm** — a required step inside Research, not a door
 3. Once confirmed, collect recent top discussions from those communities
 4. Collect three kinds of signal: **recurring pain points** / **honest competitor assessments** / **unmet needs**
 

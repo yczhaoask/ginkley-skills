@@ -22,8 +22,8 @@ going, don't check in between two communities, don't ask permission to run the n
 query. Mid-phase check-ins make the process exhausting and train the user to stop
 reading them — which costs you the one place their attention actually matters.
 
-The exceptions are the ones already written into the phases and gates: confirming the
-community list before fetching (Gate 2), and the audience probe when the user cannot
+The exceptions are steps already written into the phases themselves: confirming the
+community list before fetching, and the audience probe when the user cannot
 name their audience (Phase 1). Those are specified steps, not general check-ins.
 
 **One phase, one uninterrupted body of work, one handoff at the end.**

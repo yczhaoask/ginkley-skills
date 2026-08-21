@@ -12,7 +12,7 @@ Honest competitor assessments     →    Core selling points
 Unmet needs                       →    Slogan / brand persona
 ```
 
-## Gate 3: no quote, no positioning
+## Door 4: no quote, no positioning
 
 **Every conclusion must point back to a specific post or comment from Phase 2.**
 
@@ -20,7 +20,7 @@ Any line you can't produce a quote for is one you invented. Delete it, or go bac
 
 This discipline is where the whole process gets its value. The user does not want a document that looks professional — an AI can generate a hundred of those in three seconds, and they wouldn't trust any of them. They want a plan where **every sentence has a real user standing behind it.**
 
-### A quote alone does not clear Gate 3
+### A quote alone does not clear it
 
 Marketing copy is also a real quote, and it will pass a naive reading of this rule.
 Each supporting quote must additionally be:
