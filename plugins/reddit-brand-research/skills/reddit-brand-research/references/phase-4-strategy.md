@@ -20,6 +20,26 @@ Any line you can't produce a quote for is one you invented. Delete it, or go bac
 
 This discipline is where the whole process gets its value. The user does not want a document that looks professional — an AI can generate a hundred of those in three seconds, and they wouldn't trust any of them. They want a plan where **every sentence has a real user standing behind it.**
 
+### A quote alone does not clear Gate 3
+
+Marketing copy is also a real quote, and it will pass a naive reading of this rule.
+Each supporting quote must additionally be:
+
+- **Tier A or B** — unprompted or first-hand, never Tier C marketing narrative
+  (`references/evidence-standards.md`)
+- **Tagged with its side** — and every quote under one positioning must be the *same*
+  side
+
+### One positioning per side
+
+For a two-sided product, produce **a separate set of the four outputs below for each
+side you researched.** Supply-side positioning and demand-side positioning are
+different products of different evidence, and a single sentence that tries to serve
+both serves neither.
+
+If Phase 1 scoped this pass to one side, say so in the output and leave the other side
+explicitly blank rather than half-answering it from adjacent evidence.
+
 ## The four outputs
 
 ### 1. Brand positioning

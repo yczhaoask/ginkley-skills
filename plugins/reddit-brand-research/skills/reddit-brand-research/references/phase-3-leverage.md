@@ -8,16 +8,29 @@ Phase 2 hands you a pile of signals. This step turns signals into **judgment**.
 
 ## What counts as an opportunity
 
-All three conditions at once:
+Five conditions, all at once — three about the opportunity, two about the evidence.
 
 1. **The pain is real** — supported by recurring quotes (≥3 different authors)
 2. **Existing solutions handle it badly** — competitor assessments show clear dissatisfaction
 3. **Your product is positioned to solve it** — it maps to the Phase 1 product understanding card
 
+Plus two conditions on the evidence itself (`references/evidence-standards.md`):
+
+4. **The pain quotes are Tier A or B** — unprompted or at least first-hand. A pain
+   attested only by Tier C marketing copy is not a validated pain, however well the
+   story lands. It tells you what narrative is circulating, which is a Phase 5 input,
+   not an opportunity.
+5. **All the evidence comes from one side** — for a two-sided product, an opportunity
+   is supply-side or demand-side, never both. Mixing them produces an opportunity that
+   dissolves the moment you try to act on it, because the person with the pain and the
+   person who would pay are different people.
+
 Miss any one and it isn't an opportunity:
 - Missing 1 → you imagined it
 - Missing 2 → red ocean, someone already does it well
 - Missing 3 → it's someone else's opportunity, not yours
+- Missing 4 → you are repeating someone's marketing back to them
+- Missing 5 → two different populations, stitched into one story
 
 ## How to do it
 
@@ -43,8 +56,23 @@ What <competitor> does: <description>. The dissatisfaction is: <specific point>
 Matching product capability: <which line of the understanding card>
 Verdict: yes / partly / no — <reasoning>
 
+**Evidence tier**: A / B — with counts of each
+**Side**: supply / demand
 **Opportunity strength**: high / medium / low
 ```
+
+### 2b. Keep a separate list for things you cannot yet call opportunities
+
+Two kinds of finding are worth keeping but must not enter the ranked list:
+
+| Bucket | What goes in it | Why it's separate |
+|---|---|---|
+| **Hypotheses** | Mechanism-naming single quotes (`n=1`), founder beliefs from Phase 1 | Real enough to test, nowhere near enough to build on. Each one needs a written test |
+| **Not tested** | Things your search design could not have found | Different from disproved, and the difference matters later (`evidence-standards.md` §3) |
+
+Show both to the user alongside the opportunity list. A hypothesis presented honestly
+as a hypothesis is useful; one quietly promoted into the ranked list is how a study
+ends up recommending something nobody ever said.
 
 ### 3. Rank, then hand the judgment to the user
 

@@ -30,13 +30,19 @@ Explore  →  Research  →  Leverage  →  Strategy  →  Visual  →  Launch
 | Visual | Visual tone and language style | Tone guide |
 | Launch | Channels, first content, validation metrics | Execution checklist |
 
-## Three gates
+## Five gates
 
 The only reason this process works is that it won't let you skip steps:
 
-1. **Understand the product before researching.** Four questions get answered before any research starts — search communities before you understand the product and everything you find is noise.
+1. **Understand the product before researching.** Four questions get answered before any research starts — search communities before you understand the product and everything you find is noise. If you genuinely don't know who your audience is yet, a bounded probe searches on your product description and brings back candidate populations to choose between.
 2. **You confirm the community list.** Candidate subreddits get listed for you to approve or edit before anything is fetched. You have industry instinct the model doesn't.
-3. **No quote, no positioning.** Every conclusion points back to a specific post or comment.
+3. **The pool has to contain your buyer.** Relevant is not the same as reachable. Before fetching: are the people who'd *pay* here, or only people discussing the topic — and is the speaker the buyer, or the buyer's customer?
+4. **No quote, no positioning.** Every conclusion points back to a specific post or comment.
+5. **A quote alone isn't enough.** Marketing copy is also a real quote. Every quote carries a tier — unprompted, prompted, marketing, second-hand — and for two-sided products, which side it came from. Marketing narrative never counts as evidence of a pain point.
+
+## When Reddit doesn't work
+
+Reddit blocks datacentre IPs hard, and some audiences aren't on it at all. The skill ships application-only OAuth support plus two fallback fetchers — Hacker News (no auth) and YouTube comments (free API key) — producing the same output shape, so the later phases don't change. It also tells you which pool reaches which population, because every source returns answers shaped like its own audience.
 
 ## The core conversion
 

@@ -1,5 +1,18 @@
 # Phase 2 · Research: match communities and collect discussion
 
+## Before anything: is Reddit the right instrument here?
+
+Reddit is the default and usually correct. It is not always correct, and it is not
+always reachable. Both cases are covered in `references/instruments.md`; read it now if
+either applies:
+
+- The people who would **pay** for this may not be on Reddit at all (regulated
+  professionals, enterprise buyers, anyone posting under their employer's name).
+- Reddit returns `403` with a block page, or times out.
+
+Choosing the wrong pool does not produce an error. It produces a full round of
+plausible, well-quoted, wrongly-sourced findings — which is far more expensive.
+
 ## Why Reddit
 
 Reddit hosts a large set of narrow, vertical communities where users state problems directly and complain about products honestly.
@@ -56,7 +69,33 @@ Format:
 Is this the right set? Anything to add or drop?
 ```
 
-Wait for confirmation. Only then start fetching.
+Wait for confirmation.
+
+### 2b. Then run the reach test (Gate 2b)
+
+Confirmation means the user thinks these communities are *relevant*. It does not mean
+the people who would pay are *in* them. Before fetching, answer three questions out
+loud — full version in `references/instruments.md`:
+
+1. Are the people who would **buy** this in these communities, or only people who
+   discuss the topic?
+2. Is the speaker the **buyer**, or the buyer's **customer**? (Threads full of people
+   angry at their lawyers are not law firms evaluating tools.)
+3. For a two-sided product — which side is this pool, supply or demand? Write it down;
+   every quote gets tagged with it.
+
+If any answer is unclear, raise it with the user before spending the round.
+
+### 2c. Preflight
+
+Never launch a batch without confirming the tool returns real data and exits 0:
+
+```bash
+python3 scripts/reddit_fetch.py fetch --subs test --limit 1 && echo "exit=$?"
+```
+
+A fetcher that writes empty files and exits 0 will cost you the whole round before you
+notice. Only then start collecting.
 
 ### 3. Collect recent top discussions
 
@@ -105,3 +144,28 @@ Every signal needs **traceable original text and a link**:
 ```
 
 **A signal without a quote doesn't count.** This is the precondition for Gate 3 — every conclusion in Phase 4 must point back here.
+
+## Every quote carries a tier and a side
+
+A quote alone is not enough — a promotional post is also a real quote. Tag each one as
+you collect it, per `references/evidence-standards.md`:
+
+```markdown
+> [A · demand] "I'm done buying the cheap ones. Third one in two years."
+> — u/xxx, r/BuyItForLife, 2024-03, <link>
+```
+
+- **Tier** — `A` unprompted first-hand · `B` prompted · `C` marketing narrative ·
+  `D` second-hand. **Tier C is never evidence of a pain point**, however well it reads.
+- **Side** — `supply` or `demand`, for any two-sided product.
+
+Tagging at collection time costs seconds. Reconstructing it in Phase 4, when every
+quote in the pile looks equally valid, is how sides get mixed and marketing copy gets
+promoted to a finding.
+
+## If you found nothing
+
+Before writing "no evidence of X," check that your search *could* have found it — the
+wrong vocabulary can only ever return the wrong population. See section 3 of
+`references/evidence-standards.md`. The honest finding is usually **"not tested,"** not
+**"disproved."**

@@ -31,6 +31,63 @@ Push: "What does their life look like? In what situation would they need your pr
 
 A good answer looks like: "Young families renting in North America, who move often and don't want to buy disposable furniture."
 
+#### When the user genuinely does not know who it's for
+
+Some users cannot answer this — not from vagueness you can push through, but because
+they have an idea and no audience in mind yet. That is the type-3 user from the video,
+and pushing harder on the same question just produces a guess, which is worse than an
+admission.
+
+**Do not stall at Gate 1 and do not invent an audience for them.** Run a short probe
+instead: a cheap exploratory pass whose job is to *locate candidate populations*, not to
+produce findings.
+
+**How to run it**
+
+1. Pull 3–5 nouns and verbs from their product description — the problem, the object,
+   the action. Not brand words, not category jargon they invented.
+2. Run **at most three** searches with them. This is a probe, not Phase 2; if you find
+   yourself on a fourth, stop and bring back what you have.
+3. Read for **who is talking**, not what they conclude. You are looking for clusters of
+   people, not for pain points yet.
+4. Bring back 2–4 candidate populations, each with one real quote so the user can feel
+   the difference between them:
+
+```markdown
+## Who showed up when I searched
+
+I searched <terms> and found roughly three groups of people:
+
+**A · <population>** — <one line on who they are and what they were doing>
+> "<quote>" — <source>
+
+**B · <population>** — <one line>
+> "<quote>" — <source>
+
+**C · <population>** — <one line>
+> "<quote>" — <source>
+
+---
+Which of these feels closest to who you're building for? If none of them fit, that's
+useful too — tell me what's wrong with each and I'll search differently.
+```
+
+5. The user picks. **Then go back and finish questions 3 and 4 properly** with that
+   population in mind. The probe replaces nothing; it unblocks question 2.
+
+**Three rules that keep the probe from contaminating the study**
+
+- **Probe output is for locating, never for citing.** These searches were designed to
+  find people, not to test anything, so nothing from them may appear as evidence in
+  Phase 3 or 4. If a probe quote looks important, re-collect it properly in Phase 2.
+- **Mark it in the corpus.** Tag probe files `probe/` so they cannot be mistaken for
+  Phase 2 collection later.
+- **"None of these" is a good outcome.** It means the product does not sit where its
+  vocabulary suggests, which is worth knowing before you spend a real round. Ask what
+  was wrong with each and search again — but only once more. If a second probe also
+  misses, the honest read is that this audience is not in this pool at all; go to
+  `references/instruments.md` and pick a different one.
+
 #### When the product has two sides
 
 Marketplaces, platforms, and anything with suppliers and consumers have **two distinct audiences with different pains, different language, and different communities**. Asking "who do you want to sell it to" as one question produces a muddled answer that contaminates the whole research phase — you cannot match communities for two audiences at once.
