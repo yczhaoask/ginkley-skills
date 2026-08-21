@@ -84,6 +84,29 @@ Rank by "pain frequency × how badly existing solutions miss × our ability to s
 
 The user's industry instinct is important input. When they say "that one's off," there is usually a reason your data can't see — ask what it is. That itself is new information.
 
+## Handing over: the opportunities go out alone too
+
+Phase 3 arrives in **its own message**, after the user cleared Phase 2. It carries the
+opportunity list, the hypotheses, and the not-tested list — **and nothing from Phase 4.**
+No positioning, no draft slogan, not even a suggestion of one.
+
+End with the handoff (`references/phase-handoff.md`), and at this boundary ask the
+strategy question explicitly:
+
+> **Anything here you don't understand, don't agree with, or want to reprioritise?**
+> If an opportunity looks wrong to you, say so — your read on this industry sees things
+> my data can't, and that disagreement is itself information.
+>
+> **Is the market direction and the opportunity set clear to you now?**
+>
+> **Do you want me to build the go-to-market strategy on this basis?**
+
+**This is the most expensive door in the process.** Strategy is costly to produce and
+costly to redo, and it is where invented answers hide most easily — so do not read
+interest as instruction. The user may want to sit with these, test one against a
+customer, or send you back for more evidence before committing. Wait for the explicit
+yes.
+
 ## Output: the opportunity list
 
 Ranked by strength, each with a complete evidence chain. **At least 1, no more than 5.**

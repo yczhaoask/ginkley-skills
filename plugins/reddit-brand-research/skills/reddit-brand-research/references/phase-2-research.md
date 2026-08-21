@@ -163,6 +163,87 @@ Tagging at collection time costs seconds. Reconstructing it in Phase 4, when eve
 quote in the pile looks equally valid, is how sides get mixed and marketing copy gets
 promoted to a finding.
 
+## When is the first round actually finished?
+
+**The first round must be exhaustive.** Everything downstream inherits its gaps, and a
+gap found in Phase 4 costs the whole chain. "Be thorough" is not a usable instruction,
+so here is the bar — **all five, or you are not done:**
+
+| # | Test | Failing looks like |
+|---|---|---|
+| 1 | **Saturation reached.** The most recent batch produced **no new signal cluster** | Your last batch added a new cluster — collect more, you stopped mid-vein |
+| 2 | **All four community types covered** — category, audience, context, business | Only category communities: you found people discussing the product, not people with the problem |
+| 3 | **You searched the disconfirming vocabulary too** | Every query assumes your hypothesis. Search for the words someone who *disagrees* would use, and for the words used by people who don't know your category exists |
+| 4 | **Every query is written down** in a search log | You cannot tell the user what was *not* tested, so a gap looks identical to an absence |
+| 5 | **Thin results were chased, not accepted** | A community returned 3 comments and you moved on. Either it's the wrong community, the wrong words, or the wrong instrument — find out which |
+
+**Test 1 is the one that decides it.** Keep collecting while each batch still adds new
+clusters. When a batch adds only more instances of clusters you already have, you have
+saturated — and only then.
+
+### The search log
+
+Keep it as you go; it goes out with the report:
+
+```markdown
+| Query | Where | Results | New clusters |
+|---|---|---|---|
+| "cheap breaks replacement" | r/BuyItForLife | 40 | 2 |
+| "worth the money durable"  | r/BuyItForLife | 35 | 1 |
+| "regret buying"            | r/HomeImprovement | 28 | 0 ← saturating |
+```
+
+The "new clusters" column is your saturation curve. It is also the only honest way to
+answer "did you look into X?" later.
+
+## Gate 2c — hand over the findings, then stop
+
+When the round is complete, **deliver the market signals on their own and wait.**
+
+**Do not put the signals and the opportunities in the same message.** Given both at
+once, a reader goes to the opportunities and skims the evidence — which defeats the
+review entirely, because the opportunities are exactly what the evidence is supposed to
+be checked against. The user is the only person who can tell you that a finding
+contradicts something they know about their own industry, and they will only do that if
+they read the findings while nothing else competes for their attention.
+
+The full protocol — including what does *not* count as a yes — is in
+`references/phase-handoff.md`. The sequence here is strictly:
+
+```
+message 1  →  market signals + search log  →  WAIT for the user
+                                                    ↓
+                                        their corrections and questions
+                                                    ↓
+message 2  →  opportunities (Phase 3)
+```
+
+**Message 1 ends with these questions.** Ask them plainly, and mean them:
+
+> Before I turn this into opportunities, I want you to check the findings:
+>
+> 1. **Is anything here you don't understand or don't believe?** Tell me and I'll show
+>    you the original discussion, or go back and verify it.
+> 2. **Does anything contradict what you know about this industry?** If it does, you're
+>    probably right and my sample is probably wrong — say what's off.
+> 3. **Is there something I should have looked into and didn't?** Here's what I
+>    searched *(search log)* — anything missing?
+> 4. **Do you want to redirect any of this?** A community to add or drop, an angle to
+>    dig into further, something to stop pursuing.
+
+5. **Do you feel this has been covered thoroughly enough? Can I move on to turning it
+   into opportunities?**
+
+Then **stop.** Do not offer a preview of the opportunities, do not say "my initial read
+is…" — that pre-frames their answer and you lose the independent check.
+
+Questions 1–4 invite correction; question 5 asks permission. **Answering 1–4 is not
+permission** — when the last question is resolved, ask 5 again on its own.
+
+**If the answers change anything material — a wrong community, a missing angle, a
+finding they can refute — go back and collect again before Phase 3.** A second round
+here is cheap. Discovering it in Phase 4 means redoing the positioning.
+
 ## If you found nothing
 
 Before writing "no evidence of X," check that your search *could* have found it — the

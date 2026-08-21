@@ -111,3 +111,9 @@ The "what it must not be" line is often more useful than "what it is."
 Fill in `assets/brand-brief-template.md` and walk the user through it for confirmation.
 
 **Go through it one line at a time — don't hand over the whole document at once.** Confirming line by line, they will change their mind about things, and those changes are what they actually thought through.
+
+## Handing over
+
+This phase ends like every other: deliver its output on its own, ask whether anything
+is unclear or needs changing, then ask whether the user considers this step settled and
+wants to move on. Wait for an explicit yes. See `references/phase-handoff.md`.

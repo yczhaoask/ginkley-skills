@@ -38,12 +38,27 @@ Two references apply across all six, not to any single phase:
 
 | Reference | What it governs |
 |---|---|
+| `references/phase-handoff.md` | **How every phase ends** — deliver alone, ask, wait for an explicit yes |
 | `references/instruments.md` | Which pool to research in, whether it reaches your buyer, what to do when Reddit is blocked |
 | `references/evidence-standards.md` | Evidence tiers, marketing vs unprompted, supply/demand tagging, what counts as "no evidence" |
 
+## The handoff at every phase boundary
+
+**Six phases, six handoffs. The user opens each door, not you.**
+
+At the end of each phase — and **only** at the end, never mid-phase:
+
+1. **Deliver that phase's output alone.** No preview of the next step, no "my initial read is…". Findings and conclusions in one message means the reader skims the findings, which destroys the review.
+2. **Ask both questions.** *"Anything here you don't understand, don't believe, or want to change?"* and *"Do you feel this step has been discussed thoroughly enough — can we move on to <next phase>?"* They are different questions; neither implies the other.
+3. **Wait for an explicit yes.** Silence is not consent. "Interesting" is not consent. Them asking a question is engagement, not approval. Having answered all their questions is not approval either — **ask again after the last answer.**
+
+If a correction is material, redo that phase's work and run the handoff again rather than carrying the fix forward as a footnote.
+
+**Inside a phase, just work.** Don't check in between searches. Full protocol and the two highest-stakes handoffs: `references/phase-handoff.md`.
+
 Work them in order. **Every phase has a hard gate, and nothing advances until it clears** — that is the only reason this process works.
 
-## Five gates (never skip)
+## Six gates (never skip)
 
 **Gate 1 — Understand the product before researching.**
 Do not enter Research until Explore has clear answers to all four: what the product is, who it's for, which market, and what about the industry they're most unhappy with. Searching communities before you understand the product returns nothing but noise.
@@ -60,6 +75,9 @@ Picking the wrong pool throws no error — it returns a full round of plausible,
 
 **Gate 3 — No quote, no positioning.**
 Every conclusion in Strategy must point back to a specific post or comment from Research. Any line you can't produce a quote for is one you invented. Delete it.
+
+**Gate 2c — Findings go out on their own, and Leverage waits for a yes.**
+When Research is complete, deliver the market signals and the search log **as their own message** and stop. Do not include opportunities, and do not preview them. Then run the handoff above. Phase 3 does not start until the user says it can.
 
 **Gate 3b — A quote alone is not enough.**
 Marketing copy is also a real quote and will pass a naive reading of Gate 3. Every supporting quote must additionally carry **a tier** (unprompted first-hand · prompted · marketing narrative · second-hand) and **a side** (supply · demand). Marketing narrative is never evidence of a pain point, and one positioning never rests on quotes from two sides. See `references/evidence-standards.md`.

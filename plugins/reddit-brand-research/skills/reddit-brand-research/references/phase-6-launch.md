@@ -65,3 +65,9 @@ Validation without a bar set in advance always gets explained afterward as "not 
 | The message isn't landing | Phase 5 (tone and language) |
 
 This process is meant to loop. **Finishing one pass is not the end** — the original author noted having iterated it several times.
+
+## Handing over
+
+This phase ends like every other: deliver its output on its own, ask whether anything
+is unclear or needs changing, then ask whether the user considers this step settled and
+wants to move on. Wait for an explicit yes. See `references/phase-handoff.md`.

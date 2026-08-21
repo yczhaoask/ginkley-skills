@@ -141,4 +141,13 @@ Once all four are in, write it back for confirmation:
 Is this right? Anything to correct?
 ```
 
-**Only move to Phase 2 after the user confirms or corrects it.** That is Gate 1.
+Then ask both handoff questions, not just the first:
+
+> **Is this right? Anything to correct?**
+>
+> **And do you feel we've covered your product thoroughly enough — shall I go and find
+> the communities to research?**
+
+**Only move to Phase 2 after an explicit yes to the second.** A corrected card is not
+the same as permission to advance. That is Gate 1; the full protocol is in
+`references/phase-handoff.md`.

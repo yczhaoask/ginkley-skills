@@ -41,3 +41,9 @@ These words set the visual direction directly. If users keep saying "no-nonsense
 ## One practical rule
 
 **The avoid-list is usually worth more than the use-list.** The most common way an overseas brand faces a backlash is adopting marketing language that reads as slimy to local users. Wherever the corpus shows users mocking "marketing BS," write every one of those words down.
+
+## Handing over
+
+This phase ends like every other: deliver its output on its own, ask whether anything
+is unclear or needs changing, then ask whether the user considers this step settled and
+wants to move on. Wait for an explicit yes. See `references/phase-handoff.md`.
