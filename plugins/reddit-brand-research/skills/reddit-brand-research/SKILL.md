@@ -162,3 +162,7 @@ Unmet needs                       →    Slogan / brand persona
 ## Output
 
 The final deliverable is `assets/brand-brief-template.md`, filled in. Keep each phase's intermediate output on file so the user can back up to any phase and redo it.
+
+**When Phase 6 clears, raise the report yourself — don't wait to be asked.** Six phases in, the user shouldn't have to remember that a consolidated document is on offer. Ask three things in one message: whether to assemble the brand plan, **which file format** (Markdown is the default and always works; HTML, Word, PDF or slides depending on what they'll do with it and what the environment supports), and full depth or summary.
+
+Default to the full version — the evidence chain is the whole value, and a summary without quotes is indistinguishable from a document an AI invented. "Leave it as separate notes" is a legitimate answer. Detail in `references/phase-6-launch.md`.

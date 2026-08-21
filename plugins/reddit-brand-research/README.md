@@ -53,6 +53,14 @@ whether you want a go-to-market strategy built on it. Nothing proceeds until you
 
 Inside a phase it just works — no check-ins between searches.
 
+## It offers you the report at the end
+
+When the sixth phase clears it raises the final brand plan itself, rather than leaving
+you to ask — what format (Markdown, HTML page, Word, PDF, slides), and full depth with
+every supporting quote or a short version. Markdown always works; the rest depend on
+what your environment has installed, and it will tell you rather than quietly producing
+something lesser. Leaving it as separate per-phase notes is a valid answer too.
+
 ## When Reddit doesn't work
 
 Reddit blocks datacentre IPs hard, and some audiences aren't on it at all. The skill ships application-only OAuth support plus two fallback fetchers — Hacker News (no auth) and YouTube comments (free API key) — producing the same output shape, so the later phases don't change. It also tells you which pool reaches which population, because every source returns answers shaped like its own audience.

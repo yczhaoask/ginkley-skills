@@ -69,5 +69,50 @@ This process is meant to loop. **Finishing one pass is not the end** — the ori
 ## Handing over
 
 This phase ends like every other: deliver its output on its own, ask whether anything
-is unclear or needs changing, then ask whether the user considers this step settled and
-wants to move on. Wait for an explicit yes. See `references/phase-handoff.md`.
+is unclear or needs changing, then ask whether the user considers this step settled.
+Wait for an explicit yes. See `references/phase-handoff.md`.
+
+There is no Phase 7 — so once they clear this one, go straight to delivery.
+
+## Delivery: ask about the report, don't wait to be asked
+
+**As soon as the Phase 6 handoff clears, raise the final report yourself.** The user has
+just been through six phases; they should not have to remember that a consolidated
+document is available, or work out how to ask for one.
+
+Ask this, in one message:
+
+```markdown
+That's all six phases. Everything so far lives as separate per-phase notes —
+shall I pull it together into one brand plan?
+
+**Format** — which suits what you'll do with it?
+
+| | Good for |
+|---|---|
+| **Markdown** | Working document. Diffable, portable, easy to keep editing. The default |
+| **HTML page** | Sharing a link with people who won't clone a repo — the evidence quotes read well |
+| **Word / PDF** | Circulating to people who expect a document, or printing it |
+| **Slides** | Pitching the positioning rather than reading it |
+
+**Depth** — full plan with every quote and the search log behind each conclusion, or a
+short version with just the conclusions and links back?
+
+Or if you'd rather leave it as separate notes, that's fine too — say so and I'll stop
+here.
+```
+
+**Three things to hold to:**
+
+- **Markdown always works. The others depend on the environment** — document, slide and
+  PDF generation need tooling that may not be installed. If a requested format isn't
+  available, say so plainly and offer Markdown or HTML rather than producing something
+  degraded and calling it the thing they asked for.
+- **Default to the full version.** The evidence chain is the entire value of this
+  process; a summary that drops the quotes is a document indistinguishable from one an
+  AI invented in three seconds. Offer the short version, but make the full one the
+  default and keep the quotes in it.
+- **"No report" is a legitimate answer.** Some users want the thinking, not the
+  artefact. Don't push.
+
+Fill `assets/brand-brief-template.md` for the content, whichever format it ends up in.
