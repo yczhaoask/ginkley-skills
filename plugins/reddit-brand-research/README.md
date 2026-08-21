@@ -57,6 +57,17 @@ evidence and reads the conclusions, which is exactly backwards.
 
 Inside a phase it just works — no check-ins between searches.
 
+## The report has the same shape as the work
+
+One section per phase, in order — Explore, Research, Leverage, Strategy, Visual, Launch
+— so each section is the evidence for the one after it.
+
+Section 2 is the one that makes the rest checkable: which pool was searched and whether
+it reaches your buyers, the confirmed community list, corpus size and whether collection
+saturated, **the full search log**, every signal with its evidence tier, and an explicit
+list of what the study could not reach. Distrust a conclusion in section 4 and you can
+trace it back to a quote — or find that the question was never searched at all.
+
 ## It offers you the report at the end
 
 When the sixth phase clears it raises the final brand plan itself, rather than leaving

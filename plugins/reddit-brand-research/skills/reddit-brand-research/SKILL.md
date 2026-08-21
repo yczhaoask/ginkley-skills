@@ -195,7 +195,11 @@ Unmet needs                       →    Slogan / brand persona
 
 ## Output
 
-The final deliverable is `assets/brand-brief-template.md`, filled in. Keep each phase's intermediate output on file so the user can back up to any phase and redo it.
+The final deliverable is `assets/brand-brief-template.md`, filled in. **It has one section per phase, in order** — §1 Explore, §2 Research, §3 Leverage, §4 Strategy, §5 Visual, §6 Launch — so each section is the evidence for the one after it, and the document reads back in the same shape the work was done.
+
+§2 is the one that makes the rest checkable: instrument and reach test, the confirmed community list, corpus size and saturation, **the full search log**, the graded signals, and the scope limits. A reader who distrusts a conclusion in §4 can trace it to a quote in §2 and see what was never searched at all.
+
+Keep each phase's intermediate output on file too, so the user can back up to any phase and redo it.
 
 **When Phase 6 clears, raise the report yourself — don't wait to be asked.** Six phases in, the user shouldn't have to remember that a consolidated document is on offer. Ask three things in one message: whether to assemble the brand plan, **which file format** (Markdown is the default and always works; HTML, Word, PDF or slides depending on what they'll do with it and what the environment supports), and full depth or summary.
 
