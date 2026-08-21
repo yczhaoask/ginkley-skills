@@ -118,7 +118,7 @@ place you stop.**
 
 ## How to open
 
-When the skill triggers, first work out which of the three the user is (the video names them explicitly):
+When the skill triggers, first work out which of the three the user is (the source walkthrough names them explicitly):
 
 1. **Already has a product** — wants to take an existing business overseas
 2. **Preparing to go overseas** — research is unclear, positioning still fuzzy

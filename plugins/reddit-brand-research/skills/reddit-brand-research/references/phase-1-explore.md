@@ -34,7 +34,7 @@ A good answer looks like: "Young families renting in North America, who move oft
 #### When the user genuinely does not know who it's for
 
 Some users cannot answer this — not from vagueness you can push through, but because
-they have an idea and no audience in mind yet. That is the type-3 user from the video,
+they have an idea and no audience in mind yet. That is the type-3 user from the source walkthrough,
 and pushing harder on the same question just produces a guess, which is worse than an
 admission.
 

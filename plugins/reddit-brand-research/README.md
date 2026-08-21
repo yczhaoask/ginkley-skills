@@ -110,15 +110,27 @@ For heavy or commercial use, register an app and switch to OAuth per Reddit's AP
 
 ## Attribution
 
-This methodology is not my own. It was distilled from a short video on the Chinese-language internet.
+**This methodology is not my own.** It comes from practitioner knowledge circulating in
+Chinese-language video content — accumulated across many creators over time, not
+invented here and not taken from any single source.
 
-In that video the original author demonstrated a workflow tool of their own making that shares its name — this repository is not that tool, and has no affiliation with its author. What follows is an independent implementation that I wrote from the methodology as publicly described in the video.
+Some of those creators sell workflow tools of their own built on similar ideas. **This
+repository is not any of them and has no affiliation with their authors.** It is an
+independent implementation I wrote from methodology that was publicly explained.
 
-The original video's author and link are not listed here at this time.
+Two notes on what is and isn't inherited:
 
-Note that the video explains four of the six phases in full: explore, research, leverage, and strategy. Visual and launch appear only as labels in its progress bar and are never elaborated; those two phases in this repository are reasoned extensions consistent with the rest of the methodology, and each of those files says so at the top.
+- **The six-phase structure follows one such walkthrough.** Four of the phases —
+  explore, research, leverage, strategy — were explained there in full. Visual and
+  launch appeared only as labels and were never elaborated, so those two phases here are
+  reasoned extensions consistent with the rest. Each of those two files says so at the top.
+- **Everything added since the first version is mine and is not inherited** — the
+  evidence tiers, the reach test, the fallback instruments, the phase handoffs, the
+  saturation bar. Those came from running this process on a real product and writing
+  down what it failed to prevent.
 
-If you are the original author and would like the credit adjusted, or want this taken down, please open an issue.
+If you are one of the creators whose work informed this and would like the credit
+adjusted, or want this taken down, please open an issue.
 
 ## License
 

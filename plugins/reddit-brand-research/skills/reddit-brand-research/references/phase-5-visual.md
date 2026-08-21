@@ -1,6 +1,6 @@
 # Phase 5 · Visual: tone and language
 
-> This phase appears in the source video's progress bar (Explore / Research / Leverage / Strategy / **Visual** / Launch), but the narration never elaborates on it.
+> This phase appears in the source walkthrough's progress bar (Explore / Research / Leverage / Strategy / **Visual** / Launch), but the narration never elaborates on it.
 > What follows is a reasoned extension consistent with the rest of the methodology. Adjust it to your actual needs before relying on it.
 
 ## The principle doesn't change
