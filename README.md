@@ -18,7 +18,7 @@ Then install whichever skills you want:
 
 | Skill | What it does |
 |---|---|
-| [**reddit-brand-research**](plugins/reddit-brand-research/) | Turns a vague idea for selling abroad into a brand plan grounded in real social media discussion. Six phases, five hard gates, every conclusion traceable to a graded user quote. |
+| [**reddit-brand-research**](plugins/reddit-brand-research/) | Turns a vague idea for selling abroad into a brand plan grounded in real social media discussion. Six phases, six hard gates, every conclusion traceable to a graded user quote, and nothing advances without your say-so. |
 
 Each skill lives in its own folder under `plugins/`, self-contained with its own README and LICENSE. Open a skill's folder for its full documentation.
 

@@ -30,15 +30,28 @@ Explore  →  Research  →  Leverage  →  Strategy  →  Visual  →  Launch
 | Visual | Visual tone and language style | Tone guide |
 | Launch | Channels, first content, validation metrics | Execution checklist |
 
-## Five gates
+## Six gates
 
 The only reason this process works is that it won't let you skip steps:
 
 1. **Understand the product before researching.** Four questions get answered before any research starts — search communities before you understand the product and everything you find is noise. If you genuinely don't know who your audience is yet, a bounded probe searches on your product description and brings back candidate populations to choose between.
 2. **You confirm the community list.** Candidate subreddits get listed for you to approve or edit before anything is fetched. You have industry instinct the model doesn't.
 3. **The pool has to contain your buyer.** Relevant is not the same as reachable. Before fetching: are the people who'd *pay* here, or only people discussing the topic — and is the speaker the buyer, or the buyer's customer?
-4. **No quote, no positioning.** Every conclusion points back to a specific post or comment.
-5. **A quote alone isn't enough.** Marketing copy is also a real quote. Every quote carries a tier — unprompted, prompted, marketing, second-hand — and for two-sided products, which side it came from. Marketing narrative never counts as evidence of a pain point.
+4. **Findings come to you before conclusions.** The market signals arrive as their own message, with the full search log, and the opportunities wait until you've reviewed them. Handed both at once, anyone skims the evidence and reads the conclusions — which is exactly backwards.
+5. **No quote, no positioning.** Every conclusion points back to a specific post or comment.
+6. **A quote alone isn't enough.** Marketing copy is also a real quote. Every quote carries a tier — unprompted, prompted, marketing, second-hand — and for two-sided products, which side it came from. Marketing narrative never counts as evidence of a pain point.
+
+## You open every door
+
+Six phases, six handoffs. Each phase delivers its output on its own, then asks two
+things: is anything unclear, wrong, or worth redirecting — and is this step settled
+enough to move on? Those are separate questions, and neither silence nor interest nor
+"you answered everything" counts as a yes.
+
+At the opportunities boundary it asks outright whether the direction is clear and
+whether you want a go-to-market strategy built on it. Nothing proceeds until you say so.
+
+Inside a phase it just works — no check-ins between searches.
 
 ## When Reddit doesn't work
 
